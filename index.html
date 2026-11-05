@@ -1,11 +1,705 @@
-<title>Sorteio Ave Maria</title>
+<title>Sorteio de Passagens</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <script>
-  try { const t = localStorage.getItem('sorteio.theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch {}
+  try { const t = localStorage.getItem('sorteio.theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch { }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:IBM Plex Mono,ui-monospace,Menlo,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mx-auto{margin-left:auto;margin-right:auto}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.min-h-\[1\.25rem\]{min-height:1.25rem}.w-full{width:100%}.min-w-0{min-width:0}.max-w-xl{max-width:36rem}.shrink-0{flex-shrink:0}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-6{gap:1.5rem}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px*var(--tw-divide-y-reverse))}.divide-rule>:not([hidden])~:not([hidden]){border-color:var(--rule)}.text-wrap{text-wrap:wrap}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.border{border-width:1px}.border-y{border-top-width:1px;border-bottom-width:1px}.border-t{border-top-width:1px}.border-ink{border-color:var(--ink)}.border-rule{border-color:var(--rule)}.bg-sheet{background-color:var(--sheet)}.p-0\.5{padding:.125rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-7{padding-top:1.75rem;padding-bottom:1.75rem}.pt-4{padding-top:1rem}.text-center{text-align:center}.font-body{font-family:Spectral,Georgia,Times New Roman,serif}.font-display{font-family:Cinzel,Trajan Pro,Georgia,serif}.font-mono{font-family:IBM Plex Mono,ui-monospace,Menlo,monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.text-ink{color:var(--ink)}.text-muted{color:var(--muted)}.text-rubric{color:var(--rubric)}.underline{text-decoration-line:underline}.decoration-rule{text-decoration-color:var(--rule)}.underline-offset-4{text-underline-offset:4px}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline{outline-style:solid}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.hover\:border-ink:hover{border-color:var(--ink)}.hover\:bg-paper:hover{background-color:var(--paper)}.hover\:text-rubric:hover{color:var(--rubric)}.hover\:decoration-rubric:hover{text-decoration-color:var(--rubric)}@media (min-width:640px){.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:px-8{padding-left:2rem;padding-right:2rem}.sm\:py-9{padding-top:2.25rem;padding-bottom:2.25rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}}</style>
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<style>
+  *,
+  :after,
+  :before {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-contain-size: ;
+    --tw-contain-layout: ;
+    --tw-contain-paint: ;
+    --tw-contain-style:
+  }
+
+  ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-contain-size: ;
+    --tw-contain-layout: ;
+    --tw-contain-paint: ;
+    --tw-contain-style:
+  }
+
+  /*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb
+  }
+
+  :after,
+  :before {
+    --tw-content: ""
+  }
+
+  :host,
+  html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent
+  }
+
+  body {
+    margin: 0;
+    line-height: inherit
+  }
+
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px
+  }
+
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: inherit
+  }
+
+  a {
+    color: inherit;
+    text-decoration: inherit
+  }
+
+  b,
+  strong {
+    font-weight: bolder
+  }
+
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: IBM Plex Mono, ui-monospace, Menlo, monospace;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    font-size: 1em
+  }
+
+  small {
+    font-size: 80%
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+  }
+
+  sub {
+    bottom: -.25em
+  }
+
+  sup {
+    top: -.5em
+  }
+
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0
+  }
+
+  button,
+  select {
+    text-transform: none
+  }
+
+  button,
+  input:where([type=button]),
+  input:where([type=reset]),
+  input:where([type=submit]) {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none
+  }
+
+  :-moz-focusring {
+    outline: auto
+  }
+
+  :-moz-ui-invalid {
+    box-shadow: none
+  }
+
+  progress {
+    vertical-align: baseline
+  }
+
+  ::-webkit-inner-spin-button,
+  ::-webkit-outer-spin-button {
+    height: auto
+  }
+
+  [type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+  }
+
+  ::-webkit-search-decoration {
+    -webkit-appearance: none
+  }
+
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+  }
+
+  summary {
+    display: list-item
+  }
+
+  blockquote,
+  dd,
+  dl,
+  figure,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  p,
+  pre {
+    margin: 0
+  }
+
+  fieldset {
+    margin: 0
+  }
+
+  fieldset,
+  legend {
+    padding: 0
+  }
+
+  menu,
+  ol,
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+  }
+
+  dialog {
+    padding: 0
+  }
+
+  textarea {
+    resize: vertical
+  }
+
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    opacity: 1;
+    color: #9ca3af
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    opacity: 1;
+    color: #9ca3af
+  }
+
+  [role=button],
+  button {
+    cursor: pointer
+  }
+
+  :disabled {
+    cursor: default
+  }
+
+  audio,
+  canvas,
+  embed,
+  iframe,
+  img,
+  object,
+  svg,
+  video {
+    display: block;
+    vertical-align: middle
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto
+  }
+
+  [hidden]:where(:not([hidden=until-found])) {
+    display: none
+  }
+
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .flex {
+    display: flex
+  }
+
+  .inline-flex {
+    display: inline-flex
+  }
+
+  .grid {
+    display: grid
+  }
+
+  .hidden {
+    display: none
+  }
+
+  .min-h-\[1\.25rem\] {
+    min-height: 1.25rem
+  }
+
+  .w-full {
+    width: 100%
+  }
+
+  .min-w-0 {
+    min-width: 0
+  }
+
+  .max-w-xl {
+    max-width: 36rem
+  }
+
+  .shrink-0 {
+    flex-shrink: 0
+  }
+
+  .transform {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+  }
+
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr))
+  }
+
+  .flex-col {
+    flex-direction: column
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap
+  }
+
+  .items-center {
+    align-items: center
+  }
+
+  .items-baseline {
+    align-items: baseline
+  }
+
+  .justify-between {
+    justify-content: space-between
+  }
+
+  .gap-1 {
+    gap: .25rem
+  }
+
+  .gap-2 {
+    gap: .5rem
+  }
+
+  .gap-3 {
+    gap: .75rem
+  }
+
+  .gap-6 {
+    gap: 1.5rem
+  }
+
+  .divide-y>:not([hidden])~:not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px*(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px*var(--tw-divide-y-reverse))
+  }
+
+  .divide-rule>:not([hidden])~:not([hidden]) {
+    border-color: var(--rule)
+  }
+
+  .text-wrap {
+    text-wrap: wrap
+  }
+
+  .rounded-full {
+    border-radius: 9999px
+  }
+
+  .rounded-md {
+    border-radius: .375rem
+  }
+
+  .border {
+    border-width: 1px
+  }
+
+  .border-y {
+    border-top-width: 1px;
+    border-bottom-width: 1px
+  }
+
+  .border-t {
+    border-top-width: 1px
+  }
+
+  .border-ink {
+    border-color: var(--ink)
+  }
+
+  .border-rule {
+    border-color: var(--rule)
+  }
+
+  .bg-sheet {
+    background-color: var(--sheet)
+  }
+
+  .p-0\.5 {
+    padding: .125rem
+  }
+
+  .px-2\.5 {
+    padding-left: .625rem;
+    padding-right: .625rem
+  }
+
+  .px-3 {
+    padding-left: .75rem;
+    padding-right: .75rem
+  }
+
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem
+  }
+
+  .px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem
+  }
+
+  .py-1 {
+    padding-top: .25rem;
+    padding-bottom: .25rem
+  }
+
+  .py-1\.5 {
+    padding-top: .375rem;
+    padding-bottom: .375rem
+  }
+
+  .py-2\.5 {
+    padding-top: .625rem;
+    padding-bottom: .625rem
+  }
+
+  .py-3 {
+    padding-top: .75rem;
+    padding-bottom: .75rem
+  }
+
+  .py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem
+  }
+
+  .pt-4 {
+    padding-top: 1rem
+  }
+
+  .text-center {
+    text-align: center
+  }
+
+  .font-body {
+    font-family: Spectral, Georgia, Times New Roman, serif
+  }
+
+  .font-display {
+    font-family: Cinzel, Trajan Pro, Georgia, serif
+  }
+
+  .font-mono {
+    font-family: IBM Plex Mono, ui-monospace, Menlo, monospace
+  }
+
+  .text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem
+  }
+
+  .text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem
+  }
+
+  .text-base {
+    font-size: 1rem;
+    line-height: 1.5rem
+  }
+
+  .text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem
+  }
+
+  .text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem
+  }
+
+  .text-xs {
+    font-size: .75rem;
+    line-height: 1rem
+  }
+
+  .font-medium {
+    font-weight: 500
+  }
+
+  .font-semibold {
+    font-weight: 600
+  }
+
+  .uppercase {
+    text-transform: uppercase
+  }
+
+  .leading-relaxed {
+    line-height: 1.625
+  }
+
+  .leading-tight {
+    line-height: 1.25
+  }
+
+  .text-ink {
+    color: var(--ink)
+  }
+
+  .text-muted {
+    color: var(--muted)
+  }
+
+  .text-rubric {
+    color: var(--rubric)
+  }
+
+  .underline {
+    text-decoration-line: underline
+  }
+
+  .decoration-rule {
+    text-decoration-color: var(--rule)
+  }
+
+  .underline-offset-4 {
+    text-underline-offset: 4px
+  }
+
+  .shadow-sm {
+    --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  }
+
+  .outline {
+    outline-style: solid
+  }
+
+  .filter {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+  }
+
+  .hover\:border-ink:hover {
+    border-color: var(--ink)
+  }
+
+  .hover\:bg-paper:hover {
+    background-color: var(--paper)
+  }
+
+  .hover\:text-rubric:hover {
+    color: var(--rubric)
+  }
+
+  .hover\:decoration-rubric:hover {
+    text-decoration-color: var(--rubric)
+  }
+
+  @media (min-width:640px) {
+    .sm\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+
+    .sm\:px-8 {
+      padding-left: 2rem;
+      padding-right: 2rem
+    }
+
+    .sm\:py-9 {
+      padding-top: 2.25rem;
+      padding-bottom: 2.25rem
+    }
+
+    .sm\:text-3xl {
+      font-size: 1.875rem;
+      line-height: 2.25rem
+    }
+
+    .sm\:text-4xl {
+      font-size: 2.25rem;
+      line-height: 2.5rem
+    }
+  }
+</style>
 <style>
   /* Layout: uma folha de missal no centro; rubrica vermelha marca só a referência e a ação principal */
   :root {
@@ -18,18 +712,33 @@
     --rubric-soft: #f6e3e1;
     --on-rubric: #ffffff;
   }
+
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --paper: #0f1218; --sheet: #171b24; --ink: #e8e9ee; --muted: #9aa1b2;
-      --rule: #2a303c; --rubric: #e2776f; --rubric-soft: #3a2224; --on-rubric: #1a0d0c;
+      --paper: #0f1218;
+      --sheet: #171b24;
+      --ink: #e8e9ee;
+      --muted: #9aa1b2;
+      --rule: #2a303c;
+      --rubric: #e2776f;
+      --rubric-soft: #3a2224;
+      --on-rubric: #1a0d0c;
       color-scheme: dark;
     }
   }
+
   :root[data-theme="dark"] {
-    --paper: #0f1218; --sheet: #171b24; --ink: #e8e9ee; --muted: #9aa1b2;
-    --rule: #2a303c; --rubric: #e2776f; --rubric-soft: #3a2224; --on-rubric: #1a0d0c;
+    --paper: #0f1218;
+    --sheet: #171b24;
+    --ink: #e8e9ee;
+    --muted: #9aa1b2;
+    --rule: #2a303c;
+    --rubric: #e2776f;
+    --rubric-soft: #3a2224;
+    --on-rubric: #1a0d0c;
     color-scheme: dark;
   }
+
   body {
     background: var(--paper);
     color: var(--ink);
@@ -39,38 +748,101 @@
     padding-block: 32px 48px;
     font-size: 17px;
   }
-  .ref { text-wrap: balance; font-variant-numeric: lining-nums; }
-  .label { letter-spacing: 0.14em; text-transform: uppercase; font-size: 11px; }
-  .chip[aria-pressed="true"] { background: var(--ink); color: var(--sheet); border-color: var(--ink); }
-  .btn-primary { background: var(--rubric); color: var(--on-rubric); }
-  .btn-primary:hover { filter: brightness(1.06); }
-  :focus-visible { outline: 2px solid var(--rubric); outline-offset: 3px; }
-  .draw-in { animation: drawIn .38s ease-out; }
-  @keyframes drawIn { from { opacity: .35; transform: translateY(4px); } to { opacity: 1; transform: none; } }
-  @media (prefers-reduced-motion: reduce) { .draw-in { animation: none; } }
-  .link-box { overflow-wrap: anywhere; }
-  .tbtn[aria-pressed="true"] { background: var(--ink); color: var(--sheet); }
-  .tbtn:hover { color: var(--ink); }
-  .tbtn[aria-pressed="true"]:hover { color: var(--sheet); }
+
+  .ref {
+    text-wrap: balance;
+    font-variant-numeric: lining-nums;
+  }
+
+  .label {
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+
+  .chip[aria-pressed="true"] {
+    background: var(--ink);
+    color: var(--sheet);
+    border-color: var(--ink);
+  }
+
+  .btn-primary {
+    background: var(--rubric);
+    color: var(--on-rubric);
+  }
+
+  .btn-primary:hover {
+    filter: brightness(1.06);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--rubric);
+    outline-offset: 3px;
+  }
+
+  .draw-in {
+    animation: drawIn .38s ease-out;
+  }
+
+  @keyframes drawIn {
+    from {
+      opacity: .35;
+      transform: translateY(4px);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .draw-in {
+      animation: none;
+    }
+  }
+
+  .link-box {
+    overflow-wrap: anywhere;
+  }
+
+  .tbtn[aria-pressed="true"] {
+    background: var(--ink);
+    color: var(--sheet);
+  }
+
+  .tbtn:hover {
+    color: var(--ink);
+  }
+
+  .tbtn[aria-pressed="true"]:hover {
+    color: var(--sheet);
+  }
 </style>
 
 <main class="mx-auto w-full max-w-xl flex flex-col gap-6">
   <header class="flex flex-col gap-1">
     <div class="flex items-center justify-between gap-3 flex-wrap">
-      <p class="label font-body text-muted">Bíblia Sagrada Ave-Maria</p>
-      <div class="theme-switch inline-flex rounded-full border border-rule bg-sheet p-0.5" role="group" aria-label="Aparência">
-        <button type="button" id="t-system" data-t="system" class="tbtn font-body text-xs rounded-full px-2.5 py-1 text-muted">Sistema</button>
-        <button type="button" id="t-light" data-t="light" class="tbtn font-body text-xs rounded-full px-2.5 py-1 text-muted">Claro</button>
-        <button type="button" id="t-dark" data-t="dark" class="tbtn font-body text-xs rounded-full px-2.5 py-1 text-muted">Escuro</button>
+      <p class="label font-body text-muted">Almeida Revista e Corrigida</p>
+      <div class="theme-switch inline-flex rounded-full border border-rule bg-sheet p-0.5" role="group"
+        aria-label="Aparência">
+        <button type="button" id="t-system" data-t="system"
+          class="tbtn font-body text-xs rounded-full px-2.5 py-1 text-muted">Sistema</button>
+        <button type="button" id="t-light" data-t="light"
+          class="tbtn font-body text-xs rounded-full px-2.5 py-1 text-muted">Claro</button>
+        <button type="button" id="t-dark" data-t="dark"
+          class="tbtn font-body text-xs rounded-full px-2.5 py-1 text-muted">Escuro</button>
       </div>
     </div>
     <h1 class="font-display text-2xl sm:text-3xl text-ink">Sorteio de passagem</h1>
-    <p class="text-muted text-base leading-relaxed" id="intro">Uma passagem ao acaso, entre as mais conhecidas da Escritura. O link abre a leitura no Bíblia Online.</p>
+    <p class="text-muted text-base leading-relaxed" id="intro">Uma passagem ao acaso, entre as mais conhecidas da
+      Escritura. O link abre a leitura no Bíblia Online.</p>
   </header>
 
   <section aria-label="De onde sortear" class="flex flex-wrap gap-2" id="filters"></section>
 
-  <section class="bg-sheet border border-rule rounded-md shadow-sm px-5 py-7 sm:px-8 sm:py-9 flex flex-col gap-6" aria-live="polite">
+  <section class="bg-sheet border border-rule rounded-md shadow-sm px-5 py-7 sm:px-8 sm:py-9 flex flex-col gap-6"
+    aria-live="polite">
     <div id="result" class="flex flex-col gap-2">
       <p class="label text-muted" id="testament">Novo Testamento</p>
       <h2 class="ref font-display text-rubric text-3xl sm:text-4xl leading-tight" id="title">—</h2>
@@ -80,13 +852,18 @@
 
     <div class="border-t border-rule pt-4 flex flex-col gap-1">
       <p class="label text-muted">Link</p>
-      <a id="link" href="#" target="_blank" rel="noopener" class="link-box font-mono text-sm text-ink underline decoration-rule underline-offset-4 hover:decoration-rubric"></a>
+      <a id="link" href="#" target="_blank" rel="noopener"
+        class="link-box font-mono text-sm text-ink underline decoration-rule underline-offset-4 hover:decoration-rubric"></a>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-      <button id="draw" type="button" class="btn-primary font-body font-semibold rounded-md px-4 py-3 text-base">Sortear outra</button>
-      <a id="open" href="#" target="_blank" rel="noopener" class="text-center font-body font-medium rounded-md px-4 py-3 text-base border border-ink text-ink hover:bg-paper">Abrir leitura</a>
-      <button id="copy" type="button" class="font-body font-medium rounded-md px-4 py-3 text-base border border-rule text-ink hover:bg-paper">Copiar</button>
+      <button id="draw" type="button" class="btn-primary font-body font-semibold rounded-md px-4 py-3 text-base">Sortear
+        outra</button>
+      <a id="open" href="#" target="_blank" rel="noopener"
+        class="text-center font-body font-medium rounded-md px-4 py-3 text-base border border-ink text-ink hover:bg-paper">Abrir
+        leitura</a>
+      <button id="copy" type="button"
+        class="font-body font-medium rounded-md px-4 py-3 text-base border border-rule text-ink hover:bg-paper">Copiar</button>
     </div>
     <p id="toast" class="text-sm text-muted min-h-[1.25rem]" role="status"></p>
   </section>
@@ -100,88 +877,1834 @@
 </main>
 
 <script>
-  const BASE = 'https://www.bibliaonline.com.br/avm/';
+  const BASE = 'https://www.bibliaonline.com.br/arc/';
   // slug: [nome, abreviação, grupo]
   const BOOKS = {
-    gn:['Gênesis','Gn','pent'], ex:['Êxodo','Ex','pent'], dt:['Deuteronômio','Dt','pent'],
-    js:['Josué','Js','hist'], rt:['Rute','Rt','hist'], '1sm':['1 Samuel','1Sm','hist'], '2sm':['2 Samuel','2Sm','hist'],
-    '1rs':['1 Reis','1Rs','hist'], ne:['Neemias','Ne','hist'], '2mc':['2 Macabeus','2Mc','hist'],
-    'jó':['Jó','Jó','sap'], sl:['Salmos','Sl','salmos'], pv:['Provérbios','Pr','sap'], ec:['Eclesiastes','Ecl','sap'],
-    ct:['Cântico dos Cânticos','Ct','sap'], sb:['Sabedoria','Sb','sap'], eclo:['Eclesiástico','Eclo','sap'],
-    is:['Isaías','Is','prof'], jr:['Jeremias','Jr','prof'], lm:['Lamentações','Lm','prof'], ez:['Ezequiel','Ez','prof'],
-    os:['Oseias','Os','prof'], jl:['Joel','Jl','prof'], jn:['Jonas','Jn','prof'], mq:['Miqueias','Mq','prof'],
-    hc:['Habacuc','Hab','prof'], sf:['Sofonias','Sf','prof'],
-    mt:['São Mateus','Mt','evang'], mc:['São Marcos','Mc','evang'], lc:['São Lucas','Lc','evang'], jo:['São João','Jo','evang'],
-    atos:['Atos dos Apóstolos','At','nt'], rm:['Romanos','Rm','cartas'], '1co':['1 Coríntios','1Cor','cartas'], '2co':['2 Coríntios','2Cor','cartas'],
-    gl:['Gálatas','Gl','cartas'], ef:['Efésios','Ef','cartas'], fp:['Filipenses','Fl','cartas'], cl:['Colossenses','Cl','cartas'],
-    '1ts':['1 Tessalonicenses','1Ts','cartas'], '2tm':['2 Timóteo','2Tm','cartas'], hb:['Hebreus','Hb','cartas'], tg:['São Tiago','Tg','cartas'],
-    '1pe':['1 São Pedro','1Pd','cartas'], '1jo':['1 São João','1Jo','cartas'], ap:['Apocalipse','Ap','nt']
+    'gn': ['Gênesis', 'Gn', 'pent'],
+    'ex': ['Êxodo', 'Ex', 'pent'],
+    'lv': ['Levítico', 'Lv', 'pent'],
+    'nm': ['Números', 'Nm', 'pent'],
+    'dt': ['Deuteronômio', 'Dt', 'pent'],
+    'js': ['Josué', 'Js', 'hist'],
+    'jz': ['Juízes', 'Jz', 'hist'],
+    'rt': ['Rute', 'Rt', 'hist'],
+    '1sm': ['1 Samuel', '1Sm', 'hist'],
+    '2sm': ['2 Samuel', '2Sm', 'hist'],
+    '1rs': ['1 Reis', '1Rs', 'hist'],
+    '2rs': ['2 Reis', '2Rs', 'hist'],
+    '1cr': ['1 Crônicas', '1Cr', 'hist'],
+    '2cr': ['2 Crônicas', '2Cr', 'hist'],
+    'ed': ['Esdras', 'Esd', 'hist'],
+    'ne': ['Neemias', 'Ne', 'hist'],
+    'et': ['Ester', 'Est', 'hist'],
+    'jó': ['Jó', 'Jó', 'sap'],
+    'sl': ['Salmos', 'Sl', 'salmos'],
+    'pv': ['Provérbios', 'Pr', 'sap'],
+    'ec': ['Eclesiastes', 'Ecl', 'sap'],
+    'ct': ['Cântico dos Cânticos', 'Ct', 'sap'],
+    'is': ['Isaías', 'Is', 'prof'],
+    'jr': ['Jeremias', 'Jr', 'prof'],
+    'lm': ['Lamentações', 'Lm', 'prof'],
+    'ez': ['Ezequiel', 'Ez', 'prof'],
+    'dn': ['Daniel', 'Dn', 'prof'],
+    'os': ['Oseias', 'Os', 'prof'],
+    'jl': ['Joel', 'Jl', 'prof'],
+    'am': ['Amós', 'Am', 'prof'],
+    'ob': ['Obadias', 'Ob', 'prof'],
+    'jn': ['Jonas', 'Jn', 'prof'],
+    'mq': ['Miqueias', 'Mq', 'prof'],
+    'na': ['Naum', 'Na', 'prof'],
+    'hc': ['Habacuque', 'Hab', 'prof'],
+    'sf': ['Sofonias', 'Sf', 'prof'],
+    'ag': ['Ageu', 'Ag', 'prof'],
+    'zc': ['Zacarias', 'Zc', 'prof'],
+    'ml': ['Malaquias', 'Ml', 'prof'],
+    'mt': ['Mateus', 'Mt', 'evang'],
+    'mc': ['Marcos', 'Mc', 'evang'],
+    'lc': ['Lucas', 'Lc', 'evang'],
+    'jo': ['João', 'Jo', 'evang'],
+    'atos': ['Atos dos Apóstolos', 'At', 'nt'],
+    'rm': ['Romanos', 'Rm', 'cartas'],
+    '1co': ['1 Coríntios', '1Cor', 'cartas'],
+    '2co': ['2 Coríntios', '2Cor', 'cartas'],
+    'gl': ['Gálatas', 'Gl', 'cartas'],
+    'ef': ['Efésios', 'Ef', 'cartas'],
+    'fp': ['Filipenses', 'Fl', 'cartas'],
+    'cl': ['Colossenses', 'Cl', 'cartas'],
+    '1ts': ['1 Tessalonicenses', '1Ts', 'cartas'],
+    '2ts': ['2 Tessalonicenses', '2Ts', 'cartas'],
+    '1tm': ['1 Timóteo', '1Tm', 'cartas'],
+    '2tm': ['2 Timóteo', '2Tm', 'cartas'],
+    'tt': ['Tito', 'Tt', 'cartas'],
+    'fm': ['Filemom', 'Fm', 'cartas'],
+    'hb': ['Hebreus', 'Hb', 'cartas'],
+    'tg': ['Tiago', 'Tg', 'cartas'],
+    '1pe': ['1 Pedro', '1Pd', 'cartas'],
+    '2pe': ['2 Pedro', '2Pd', 'cartas'],
+    '1jo': ['1 João', '1Jo', 'cartas'],
+    '2jo': ['2 João', '2Jo', 'cartas'],
+    '3jo': ['3 João', '3Jo', 'cartas'],
+    'jd': ['Judas', 'Jd', 'cartas'],
+    'ap': ['Apocalipse', 'Ap', 'nt']
   };
-  const NT_GROUPS = new Set(['evang','nt','cartas']);
+  const NT_GROUPS = new Set(['evang', 'nt', 'cartas']);
 
-  // [livro, capítulo, versículo inicial, versículo final, título]; Salmos sem versículos, numeração da Ave-Maria
+  // [livro, capítulo, versículo inicial, versículo final, título]; Salmos sem versículos, numeração hebraica (ARC)
+  // [livro, capítulo, versículo inicial, versículo final, título, capítulo final se a passagem passar do capítulo]
   const PASSAGES = [
-    ['gn',1,1,31,'A criação'], ['gn',3,1,24,'A queda'], ['gn',12,1,9,'O chamado de Abraão'],
-    ['gn',22,1,18,'O sacrifício de Isaac'], ['gn',28,10,22,'A escada de Jacó'], ['gn',45,1,15,'José se revela aos irmãos'],
-    ['ex',3,1,15,'A sarça ardente'], ['ex',14,10,31,'A travessia do mar'], ['ex',20,1,17,'Os Dez Mandamentos'],
-    ['dt',6,4,9,'Ouve, Israel'], ['dt',30,15,20,'A vida e a morte diante de ti'], ['js',1,1,9,'Sê forte e corajoso'],
-    ['rt',1,6,18,'Teu povo será o meu povo'], ['1sm',3,1,10,'Fala, Senhor, que teu servo escuta'], ['1sm',16,1,13,'A unção de Davi'],
-    ['2sm',12,1,13,'Natã repreende Davi'], ['1rs',19,9,18,'Deus na brisa suave'], ['ne',8,1,12,'A leitura da Lei'],
-    ['2mc',12,38,46,'A oração pelos mortos'],
-    ['jó',1,13,22,'O Senhor deu, o Senhor tirou'], ['jó',38,1,18,'Deus responde a Jó'], ['jó',42,1,6,'Jó se rende'],
-    ['pv',3,1,12,'Confia no Senhor de todo o coração'], ['ec',3,1,15,'Há tempo para tudo'], ['ct',8,6,7,'O amor é forte como a morte'],
-    ['sb',3,1,9,'As almas dos justos'], ['eclo',2,1,11,'Prepara-te para a provação'],
-    ['is',6,1,8,'Eis-me aqui, envia-me'], ['is',11,1,9,'O rebento de Jessé'], ['is',40,1,11,'Consolai o meu povo'],
-    ['is',40,28,31,'Asas como águia'], ['is',43,1,7,'Chamei-te pelo nome'], ['is',49,14,16,'Eu não te esquecerei'],
-    ['is',53,1,12,'O Servo sofredor'], ['is',55,6,11,'Buscai o Senhor'], ['is',58,6,11,'O jejum que agrada a Deus'],
-    ['is',61,1,3,'O Espírito do Senhor está sobre mim'], ['jr',1,4,10,'O chamado de Jeremias'], ['jr',18,1,6,'O oleiro e o barro'],
-    ['jr',29,11,14,'Projetos de paz'], ['jr',31,31,34,'A nova aliança'], ['lm',3,22,33,'As misericórdias do Senhor'],
-    ['ez',36,24,28,'Um coração novo'], ['ez',37,1,14,'Os ossos secos'], ['os',11,1,9,'O amor de Deus por Israel'],
-    ['jl',2,12,18,'Rasgai o coração'], ['jn',3,1,10,'A conversão de Nínive'], ['mq',6,6,8,'O que o Senhor pede de ti'],
-    ['hc',3,17,19,'Ainda que a figueira não floresça'], ['sf',3,14,18,'O Senhor exulta por ti'],
-    ['sl',1,0,0,'Os dois caminhos'], ['sl',4,0,0,'Oração da noite'], ['sl',8,0,0,'Que é o homem?'], ['sl',12,0,0,'Até quando, Senhor?'],
-    ['sl',15,0,0,'O Senhor é a minha herança'], ['sl',18,0,0,'Os céus proclamam a glória de Deus'], ['sl',21,0,0,'Meu Deus, por que me abandonaste?'],
-    ['sl',22,0,0,'O Senhor é meu pastor'], ['sl',26,0,0,'O Senhor é minha luz'], ['sl',31,0,0,'A alegria do perdão'],
-    ['sl',33,0,0,'Provai e vede'], ['sl',39,0,0,'Esperei no Senhor'], ['sl',41,0,0,'Como a corça anseia'],
-    ['sl',45,0,0,'Deus é nosso refúgio'], ['sl',50,0,0,'Miserere'], ['sl',61,0,0,'Só em Deus repousa minha alma'],
-    ['sl',62,0,0,'Minha alma tem sede de ti'], ['sl',83,0,0,'Como são amáveis as tuas moradas'], ['sl',89,0,0,'Ensina-nos a contar os dias'],
-    ['sl',90,0,0,'À sombra do Altíssimo'], ['sl',99,0,0,'Aclamai o Senhor'], ['sl',102,0,0,'Bendize, ó minha alma'],
-    ['sl',120,0,0,'De onde virá o meu socorro?'], ['sl',129,0,0,'Das profundezas'], ['sl',130,0,0,'Como criança no colo da mãe'],
-    ['sl',138,0,0,'Senhor, tu me sondas e me conheces'], ['sl',144,0,0,'O Senhor é bom para com todos'], ['sl',150,0,0,'Tudo o que respira louve o Senhor'],
-    ['mt',5,1,12,'As bem-aventuranças'], ['mt',5,13,16,'Sal da terra e luz do mundo'], ['mt',5,38,48,'Amai os vossos inimigos'],
-    ['mt',6,5,15,'O Pai-Nosso'], ['mt',6,25,34,'Não vos preocupeis'], ['mt',7,7,12,'Pedi e recebereis'],
-    ['mt',7,24,27,'A casa sobre a rocha'], ['mt',11,25,30,'Vinde a mim, vós que estais cansados'], ['mt',13,1,23,'O semeador'],
-    ['mt',13,44,46,'O tesouro e a pérola'], ['mt',14,22,33,'Jesus caminha sobre as águas'], ['mt',16,13,20,'Tu és Pedro'],
-    ['mt',17,1,9,'A transfiguração'], ['mt',18,21,35,'Perdoar setenta vezes sete'], ['mt',20,1,16,'Os trabalhadores da vinha'],
-    ['mt',22,34,40,'O maior mandamento'], ['mt',25,14,30,'Os talentos'], ['mt',25,31,46,'O juízo final'],
-    ['mt',26,36,46,'A agonia no Getsêmani'], ['mt',28,16,20,'Ide e fazei discípulos'],
-    ['mc',2,1,12,'O paralítico descido pelo teto'], ['mc',4,35,41,'A tempestade acalmada'], ['mc',5,21,43,'A filha de Jairo'],
-    ['mc',6,30,44,'A multiplicação dos pães'], ['mc',9,14,29,'Eu creio, ajuda a minha incredulidade'], ['mc',10,17,27,'O jovem rico'],
-    ['mc',10,46,52,'O cego Bartimeu'], ['mc',12,41,44,'A oferta da viúva'], ['mc',16,1,8,'O túmulo vazio'],
-    ['lc',1,26,38,'A anunciação'], ['lc',1,39,56,'A visitação e o Magnificat'], ['lc',2,1,20,'O nascimento de Jesus'],
-    ['lc',2,22,40,'A apresentação no templo'], ['lc',2,41,52,'Jesus entre os doutores'], ['lc',4,16,21,'Jesus na sinagoga de Nazaré'],
-    ['lc',5,1,11,'A pesca milagrosa'], ['lc',7,36,50,'A pecadora perdoada'], ['lc',10,25,37,'O bom samaritano'],
-    ['lc',10,38,42,'Marta e Maria'], ['lc',11,1,13,'Senhor, ensina-nos a orar'], ['lc',12,13,21,'O rico insensato'],
-    ['lc',15,1,10,'A ovelha e a moeda perdidas'], ['lc',15,11,32,'O filho pródigo'], ['lc',18,1,8,'A viúva persistente'],
-    ['lc',18,9,14,'O fariseu e o publicano'], ['lc',19,1,10,'Zaqueu'], ['lc',23,33,43,'Hoje estarás comigo no paraíso'],
-    ['lc',24,13,35,'Os discípulos de Emaús'],
-    ['jo',1,1,18,'No princípio era o Verbo'], ['jo',2,1,11,'As bodas de Caná'], ['jo',3,1,21,'Nicodemos'],
-    ['jo',4,1,42,'A samaritana'], ['jo',6,35,51,'O pão da vida'], ['jo',8,1,11,'A mulher adúltera'],
-    ['jo',9,1,41,'O cego de nascença'], ['jo',10,1,18,'O bom pastor'], ['jo',11,17,44,'A ressurreição de Lázaro'],
-    ['jo',13,1,17,'O lava-pés'], ['jo',14,1,14,'Eu sou o caminho'], ['jo',14,15,27,'A paz vos deixo'],
-    ['jo',15,1,8,'A videira e os ramos'], ['jo',15,9,17,'Permanecei no meu amor'], ['jo',17,20,26,'Que todos sejam um'],
-    ['jo',19,25,30,'Eis a tua mãe'], ['jo',20,19,29,'Tomé'], ['jo',21,15,19,'Pedro, tu me amas?'],
-    ['atos',2,1,13,'Pentecostes'], ['atos',2,42,47,'A vida da primeira comunidade'], ['atos',9,1,19,'A conversão de Paulo'],
-    ['rm',5,1,11,'A esperança não decepciona'], ['rm',8,18,30,'Tudo concorre para o bem'], ['rm',8,31,39,'Nada nos separará do amor de Deus'],
-    ['rm',12,1,21,'O culto espiritual'], ['1co',12,12,27,'Um só corpo, muitos membros'], ['1co',13,1,13,'O hino ao amor'],
-    ['1co',15,1,11,'O anúncio da ressurreição'], ['2co',4,7,18,'Tesouro em vasos de barro'], ['2co',12,7,10,'Minha graça te basta'],
-    ['gl',5,13,26,'O fruto do Espírito'], ['ef',2,1,10,'Salvos pela graça'], ['ef',3,14,21,'A oração de Paulo'],
-    ['ef',6,10,18,'A armadura de Deus'], ['fp',2,1,11,'O hino de Cristo'], ['fp',4,4,9,'Alegrai-vos sempre'],
-    ['fp',4,10,13,'Tudo posso naquele que me fortalece'], ['cl',3,12,17,'Revesti-vos de misericórdia'], ['1ts',5,12,24,'Orai sem cessar'],
-    ['2tm',4,6,8,'Combati o bom combate'], ['hb',4,14,16,'O sumo sacerdote que se compadece'], ['hb',11,1,16,'A fé'],
-    ['hb',12,1,13,'Corramos com perseverança'], ['tg',1,2,12,'A provação gera perseverança'], ['tg',2,14,26,'A fé sem obras'],
-    ['1pe',5,6,11,'Lançai sobre ele as vossas preocupações'], ['1jo',1,5,10,'Deus é luz'], ['1jo',4,7,21,'Deus é amor'],
-    ['ap',3,14,22,'Eis que estou à porta e bato'], ['ap',21,1,7,'Novo céu e nova terra']
+    ["gn", 1, 1, 31, "A criação"],
+    ["gn", 1, 14, 19, "O quarto dia"],
+    ["gn", 1, 24, 31, "O sexto dia"],
+    ["gn", 2, 4, 25, "O homem e a mulher no jardim"],
+    ["gn", 3, 1, 24, "A queda"],
+    ["gn", 3, 8, 13, "Deus interroga Adão e Eva"],
+    ["gn", 4, 1, 16, "Caim e Abel"],
+    ["gn", 5, 18, 24, "Deus arrebata Enoque"],
+    ["gn", 5, 25, 32, "De Matusalém a Noé"],
+    ["gn", 6, 1, 7, "A corrupção na terra"],
+    ["gn", 6, 13, 22, "A construção da arca"],
+    ["gn", 7, 1, 24, "O grande dilúvio"],
+    ["gn", 8, 6, 12, "Noé solta o corvo e a pomba"],
+    ["gn", 8, 13, 19, "A saída da arca"],
+    ["gn", 9, 1, 17, "A aliança do arco-íris"],
+    ["gn", 9, 18, 25, "A vergonha de Noé e a maldição de Canaã"],
+    ["gn", 10, 6, 20, "Os descendentes de Cam"],
+    ["gn", 10, 21, 32, "Os descendentes de Sem"],
+    ["gn", 11, 1, 9, "A torre de Babel"],
+    ["gn", 12, 1, 9, "O chamado de Abraão"],
+    ["gn", 12, 10, 20, "Abrão e Sarai no Egito"],
+    ["gn", 13, 1, 9, "Abrão e Ló se separam"],
+    ["gn", 14, 1, 9, "A guerra dos reis"],
+    ["gn", 14, 10, 16, "Abrão resgata Ló"],
+    ["gn", 14, 17, 24, "Melquisedeque abençoa Abrão"],
+    ["gn", 15, 1, 7, "A aliança de Deus com Abrão"],
+    ["gn", 15, 8, 21, "Deus confirma a sua promessa"],
+    ["gn", 16, 1, 16, "Agar e Ismael"],
+    ["gn", 17, 1, 8, "Abraão, pai de muitas nações"],
+    ["gn", 17, 9, 27, "A aliança da circuncisão"],
+    ["gn", 18, 1, 8, "Os três visitantes"],
+    ["gn", 18, 9, 15, "Sara ri da promessa"],
+    ["gn", 18, 16, 33, "Abraão intercede por Sodoma"],
+    ["gn", 19, 1, 11, "Ló acolhe os anjos"],
+    ["gn", 19, 12, 23, "Ló foge para Zoar"],
+    ["gn", 19, 24, 29, "A destruição de Sodoma e Gomorra"],
+    ["gn", 19, 30, 38, "Ló e suas filhas"],
+    ["gn", 20, 1, 18, "Abraão, Sara e Abimeleque"],
+    ["gn", 21, 1, 8, "O nascimento de Isaque"],
+    ["gn", 21, 9, 21, "Sara se volta contra Agar"],
+    ["gn", 21, 22, 34, "A aliança em Berseba"],
+    ["gn", 22, 1, 18, "O sacrifício de Isaac"],
+    ["gn", 22, 11, 19, "O Senhor provê o sacrifício"],
+    ["gn", 23, 1, 20, "A morte e o sepultamento de Sara"],
+    ["gn", 24, 1, 14, "Uma esposa para Isaque"],
+    ["gn", 24, 15, 61, "Rebeca é escolhida"],
+    ["gn", 24, 62, 67, "Isaque se casa com Rebeca"],
+    ["gn", 25, 1, 6, "Abraão e Quetura"],
+    ["gn", 25, 19, 28, "Jacó e Esaú"],
+    ["gn", 25, 29, 34, "Esaú vende a primogenitura"],
+    ["gn", 26, 6, 11, "Isaque engana Abimeleque"],
+    ["gn", 26, 12, 25, "A prosperidade de Isaque"],
+    ["gn", 26, 26, 33, "A aliança de Isaque com Abimeleque"],
+    ["gn", 27, 1, 29, "Isaque abençoa Jacó"],
+    ["gn", 27, 30, 46, "A esperança perdida de Esaú"],
+    ["gn", 28, 10, 22, "A escada de Jacó"],
+    ["gn", 29, 1, 13, "Jacó encontra Raquel"],
+    ["gn", 29, 14, 30, "Jacó se casa com Lia e Raquel"],
+    ["gn", 30, 1, 8, "Dã e Naftali"],
+    ["gn", 30, 9, 16, "Gade e Aser"],
+    ["gn", 30, 25, 43, "Jacó prospera"],
+    ["gn", 31, 1, 21, "Jacó foge de Labão"],
+    ["gn", 31, 22, 42, "Labão persegue Jacó"],
+    ["gn", 31, 43, 55, "A aliança de Jacó com Labão"],
+    ["gn", 32, 1, 21, "Jacó se prepara para encontrar Esaú"],
+    ["gn", 32, 22, 32, "Jacó luta com Deus"],
+    ["gn", 33, 1, 17, "Jacó encontra Esaú"],
+    ["gn", 34, 1, 12, "A violação de Diná"],
+    ["gn", 34, 13, 31, "A vingança dos irmãos de Diná"],
+    ["gn", 35, 1, 15, "Jacó volta a Betel"],
+    ["gn", 37, 1, 11, "Os sonhos de José"],
+    ["gn", 37, 12, 30, "José é vendido para o Egito"],
+    ["gn", 37, 31, 36, "Jacó chora por José"],
+    ["gn", 38, 1, 26, "Judá e Tamar"],
+    ["gn", 39, 1, 12, "José e a mulher de Potifar"],
+    ["gn", 39, 13, 23, "José é preso injustamente"],
+    ["gn", 40, 1, 23, "O copeiro e o padeiro"],
+    ["gn", 41, 1, 13, "Os sonhos do faraó"],
+    ["gn", 41, 14, 36, "José interpreta os sonhos do faraó"],
+    ["gn", 41, 37, 45, "José governa o Egito"],
+    ["gn", 41, 46, 52, "Os sete anos de fartura"],
+    ["gn", 42, 1, 24, "Os irmãos de José vão ao Egito"],
+    ["gn", 42, 25, 38, "Os irmãos de José voltam a Canaã"],
+    ["gn", 43, 1, 15, "A volta ao Egito com Benjamim"],
+    ["gn", 43, 16, 34, "José recebe os irmãos à mesa"],
+    ["gn", 44, 18, 34, "Judá suplica por Benjamim"],
+    ["gn", 45, 1, 15, "José se revela aos irmãos"],
+    ["gn", 45, 9, 15, "José manda buscar o pai"],
+    ["gn", 45, 16, 24, "O faraó convida Jacó ao Egito"],
+    ["gn", 46, 28, 34, "Jacó chega ao Egito"],
+    ["gn", 47, 1, 12, "Jacó se estabelece em Gósen"],
+    ["gn", 47, 13, 26, "A fome continua"],
+    ["gn", 48, 1, 22, "Jacó abençoa Efraim e Manassés"],
+    ["gn", 50, 1, 14, "O luto e o sepultamento de Jacó"],
+    ["gn", 50, 15, 21, "José consola os irmãos"],
+    ["ex", 1, 1, 7, "Os israelitas se multiplicam no Egito"],
+    ["ex", 1, 8, 22, "A opressão de um novo rei"],
+    ["ex", 2, 1, 10, "O nascimento e a adoção de Moisés"],
+    ["ex", 2, 11, 22, "Moisés é rejeitado e foge"],
+    ["ex", 3, 1, 15, "A sarça ardente"],
+    ["ex", 4, 10, 17, "Arão é designado"],
+    ["ex", 4, 18, 26, "Moisés parte para o Egito"],
+    ["ex", 5, 6, 14, "Tijolos sem palha"],
+    ["ex", 5, 15, 23, "O clamor dos israelitas"],
+    ["ex", 6, 1, 13, "Deus promete a libertação"],
+    ["ex", 7, 1, 7, "Deus dá ordens a Moisés e Arão"],
+    ["ex", 7, 8, 13, "A vara de Arão"],
+    ["ex", 7, 14, 25, "A primeira praga: o sangue"],
+    ["ex", 8, 1, 15, "A segunda praga: as rãs"],
+    ["ex", 8, 20, 32, "A quarta praga: as moscas"],
+    ["ex", 9, 1, 7, "A quinta praga: o gado"],
+    ["ex", 9, 13, 35, "A sétima praga: o granizo"],
+    ["ex", 10, 1, 20, "A oitava praga: os gafanhotos"],
+    ["ex", 10, 21, 29, "A nona praga: as trevas"],
+    ["ex", 12, 1, 13, "A primeira Páscoa"],
+    ["ex", 12, 31, 42, "Começa o êxodo"],
+    ["ex", 12, 43, 51, "Instruções para a Páscoa"],
+    ["ex", 13, 17, 22, "As colunas de nuvem e de fogo"],
+    ["ex", 14, 10, 31, "A travessia do mar"],
+    ["ex", 14, 15, 31, "O mar Vermelho se abre"],
+    ["ex", 15, 1, 21, "O cântico junto ao mar"],
+    ["ex", 15, 22, 27, "As águas de Mara"],
+    ["ex", 16, 1, 21, "O maná e as codornizes"],
+    ["ex", 16, 22, 30, "A guarda do sábado"],
+    ["ex", 16, 31, 36, "O vaso de maná"],
+    ["ex", 17, 1, 7, "Água da rocha"],
+    ["ex", 17, 8, 16, "A derrota dos amalequitas"],
+    ["ex", 18, 1, 12, "A visita de Jetro"],
+    ["ex", 18, 13, 27, "Jetro aconselha Moisés"],
+    ["ex", 19, 1, 15, "Israel no monte Sinai"],
+    ["ex", 19, 16, 25, "O Senhor desce ao Sinai"],
+    ["ex", 20, 1, 17, "Os Dez Mandamentos"],
+    ["ex", 21, 1, 11, "Os servos hebreus"],
+    ["ex", 23, 1, 9, "Justiça e misericórdia"],
+    ["ex", 23, 20, 33, "O anjo de Deus irá à frente"],
+    ["ex", 24, 1, 11, "A aliança é selada"],
+    ["ex", 24, 12, 18, "Moisés no monte"],
+    ["ex", 25, 17, 22, "O propiciatório"],
+    ["ex", 26, 15, 30, "As tábuas e as bases"],
+    ["ex", 30, 22, 33, "O óleo da unção"],
+    ["ex", 31, 1, 11, "Bezalel e Aoliabe"],
+    ["ex", 31, 12, 17, "O sinal do sábado"],
+    ["ex", 33, 1, 6, "A ordem de deixar o Sinai"],
+    ["ex", 33, 12, 23, "A promessa da presença de Deus"],
+    ["ex", 34, 10, 35, "O Senhor renova a aliança"],
+    ["ex", 35, 10, 19, "Os artífices habilidosos"],
+    ["ex", 35, 20, 29, "O povo traz ofertas"],
+    ["ex", 35, 30, 35, "Bezalel e Aoliabe"],
+    ["ex", 36, 1, 7, "O povo traz mais do que o necessário"],
+    ["ex", 36, 20, 34, "As tábuas e as bases"],
+    ["ex", 38, 21, 31, "O inventário dos materiais"],
+    ["ex", 39, 32, 43, "Moisés aprova a obra"],
+    ["dt", 1, 1, 8, "A ordem de deixar Horebe"],
+    ["dt", 1, 19, 25, "Os doze espias"],
+    ["dt", 1, 26, 33, "A rebelião de Israel"],
+    ["dt", 1, 34, 40, "O castigo de Israel"],
+    ["dt", 1, 41, 46, "A derrota em Hormá"],
+    ["dt", 2, 1, 23, "A peregrinação no deserto"],
+    ["dt", 2, 24, 37, "A derrota de Siom"],
+    ["dt", 3, 1, 11, "A derrota de Ogue"],
+    ["dt", 3, 23, 29, "Moisés é impedido de atravessar o Jordão"],
+    ["dt", 4, 1, 14, "Exortação à obediência"],
+    ["dt", 4, 15, 31, "Advertência contra a idolatria"],
+    ["dt", 4, 32, 40, "Só o Senhor é Deus"],
+    ["dt", 4, 44, 49, "Introdução à Lei"],
+    ["dt", 5, 5, 21, "Os Dez Mandamentos"],
+    ["dt", 5, 22, 33, "Moisés intercede pelo povo"],
+    ["dt", 6, 4, 9, "Ouve, Israel"],
+    ["dt", 6, 20, 25, "Ensina teus filhos"],
+    ["dt", 7, 1, 11, "Expulsai as nações"],
+    ["dt", 7, 12, 26, "As promessas de Deus"],
+    ["dt", 8, 1, 20, "Lembra-te do Senhor teu Deus"],
+    ["dt", 9, 1, 6, "A certeza da vitória"],
+    ["dt", 10, 12, 22, "Um chamado à obediência"],
+    ["dt", 11, 1, 7, "Obediência e disciplina"],
+    ["dt", 11, 8, 17, "As grandes bênçãos de Deus"],
+    ["dt", 11, 18, 25, "Guardai as palavras de Deus"],
+    ["dt", 11, 26, 32, "Bênção e maldição"],
+    ["dt", 12, 1, 28, "Um só lugar de culto"],
+    ["dt", 13, 1, 11, "A morte dos idólatras"],
+    ["dt", 15, 1, 6, "O sétimo ano"],
+    ["dt", 15, 12, 18, "Os servos hebreus"],
+    ["dt", 17, 2, 7, "Eliminai o idólatra"],
+    ["dt", 17, 14, 20, "Orientações para o rei"],
+    ["dt", 18, 9, 14, "A feitiçaria é proibida"],
+    ["dt", 18, 15, 22, "Um profeta como Moisés"],
+    ["dt", 19, 15, 21, "O testemunho de duas ou três testemunhas"],
+    ["dt", 21, 1, 9, "Expiação por um homicídio sem autor"],
+    ["dt", 22, 13, 30, "Violações do casamento"],
+    ["dt", 23, 1, 8, "Os excluídos da assembleia"],
+    ["dt", 25, 5, 12, "A viuvez e o casamento"],
+    ["dt", 27, 11, 26, "As maldições proclamadas do Ebal"],
+    ["dt", 28, 1, 14, "As bênçãos da obediência"],
+    ["dt", 28, 15, 68, "As maldições da desobediência"],
+    ["dt", 29, 1, 29, "A aliança em Moabe"],
+    ["dt", 30, 1, 10, "A promessa de restauração"],
+    ["dt", 30, 15, 20, "A vida e a morte diante de ti"],
+    ["dt", 31, 1, 8, "Josué sucederá Moisés"],
+    ["dt", 31, 14, 23, "Deus comissiona Josué"],
+    ["dt", 32, 1, 47, "O cântico de Moisés"],
+    ["dt", 33, 1, 29, "Moisés abençoa as doze tribos"],
+    ["js", 1, 1, 9, "Sê forte e corajoso"],
+    ["js", 1, 10, 18, "Josué assume o comando"],
+    ["js", 2, 1, 7, "Raabe acolhe os espias"],
+    ["js", 2, 8, 24, "A promessa a Raabe"],
+    ["js", 3, 1, 17, "A travessia do Jordão"],
+    ["js", 4, 1, 18, "As doze pedras do Jordão"],
+    ["js", 5, 1, 12, "A circuncisão e a Páscoa em Gilgal"],
+    ["js", 7, 1, 15, "A derrota em Ai"],
+    ["js", 7, 16, 26, "O pecado de Acã"],
+    ["js", 8, 1, 29, "A conquista de Ai"],
+    ["js", 8, 30, 35, "Josué renova a aliança"],
+    ["js", 9, 1, 27, "O engano dos gibeonitas"],
+    ["js", 10, 1, 15, "O dia em que o sol parou"],
+    ["js", 10, 16, 28, "A vitória em Maquedá"],
+    ["js", 11, 16, 23, "Josué toma toda a terra"],
+    ["js", 13, 1, 7, "As terras ainda não conquistadas"],
+    ["js", 13, 8, 14, "A herança a leste do Jordão"],
+    ["js", 13, 15, 23, "A herança de Rúben"],
+    ["js", 14, 6, 15, "Calebe pede Hebrom"],
+    ["js", 15, 1, 12, "A herança de Judá"],
+    ["js", 16, 1, 10, "A herança de Efraim"],
+    ["js", 17, 1, 18, "A herança de Manassés a oeste"],
+    ["js", 18, 1, 10, "A divisão do restante da terra"],
+    ["js", 18, 11, 28, "A herança de Benjamim"],
+    ["js", 19, 1, 9, "A herança de Simeão"],
+    ["js", 19, 10, 16, "A herança de Zebulom"],
+    ["js", 19, 17, 23, "A herança de Issacar"],
+    ["js", 19, 24, 31, "A herança de Aser"],
+    ["js", 19, 32, 39, "A herança de Naftali"],
+    ["js", 19, 40, 48, "A herança de Dã"],
+    ["js", 22, 1, 8, "As tribos do leste voltam para casa"],
+    ["js", 24, 1, 13, "Josué recorda a história de Israel"],
+    ["js", 24, 14, 28, "Escolhei a quem servireis"],
+    ["jz", 1, 1, 7, "A conquista de Canaã continua"],
+    ["jz", 1, 8, 26, "A tomada de Jerusalém e de Hebrom"],
+    ["jz", 1, 27, 36, "A conquista que não se completou"],
+    ["jz", 2, 10, 15, "A infidelidade de Israel"],
+    ["jz", 2, 16, 23, "Deus levanta juízes"],
+    ["jz", 3, 1, 6, "As nações deixadas para provar Israel"],
+    ["jz", 3, 12, 30, "Eúde"],
+    ["jz", 4, 1, 16, "Débora e Baraque"],
+    ["jz", 4, 17, 24, "Jael mata Sísera"],
+    ["jz", 5, 1, 31, "O cântico de Débora e Baraque"],
+    ["jz", 6, 1, 10, "Midiã oprime Israel"],
+    ["jz", 6, 11, 24, "O chamado de Gideão"],
+    ["jz", 6, 33, 40, "O sinal da lã"],
+    ["jz", 7, 9, 14, "A espada de Gideão"],
+    ["jz", 7, 15, 25, "Gideão derrota Midiã"],
+    ["jz", 8, 1, 21, "Gideão derrota Zeba e Zalmuna"],
+    ["jz", 9, 1, 6, "A conspiração de Abimeleque"],
+    ["jz", 9, 7, 21, "A parábola de Jotão"],
+    ["jz", 9, 22, 29, "Gaal conspira com os siquemitas"],
+    ["jz", 9, 30, 49, "A queda de Siquém"],
+    ["jz", 9, 50, 57, "O castigo de Abimeleque"],
+    ["jz", 11, 1, 28, "Jefté liberta Israel"],
+    ["jz", 11, 29, 40, "O voto trágico de Jefté"],
+    ["jz", 12, 1, 7, "Jefté derrota Efraim"],
+    ["jz", 12, 8, 15, "Ibsã, Elom e Abdom"],
+    ["jz", 13, 1, 25, "O nascimento de Sansão"],
+    ["jz", 14, 1, 7, "O casamento de Sansão"],
+    ["jz", 14, 8, 20, "O enigma de Sansão"],
+    ["jz", 15, 1, 20, "A vingança de Sansão"],
+    ["jz", 16, 4, 14, "Sansão e Dalila"],
+    ["jz", 16, 15, 22, "Dalila descobre o segredo"],
+    ["jz", 16, 23, 31, "A vingança e a morte de Sansão"],
+    ["jz", 17, 1, 13, "A idolatria de Mica"],
+    ["jz", 18, 1, 13, "Os danitas se estabelecem em Laís"],
+    ["jz", 18, 14, 31, "Os danitas tomam os ídolos de Mica"],
+    ["jz", 19, 1, 30, "O crime dos benjamitas"],
+    ["jz", 20, 1, 17, "A decisão da assembleia"],
+    ["jz", 20, 18, 48, "A guerra contra Benjamim"],
+    ["rt", 1, 6, 18, "Teu povo será o meu povo"],
+    ["rt", 2, 1, 23, "Boaz encontra Rute"],
+    ["rt", 3, 1, 18, "O resgate de Rute é garantido"],
+    ["rt", 4, 1, 12, "Boaz resgata Rute"],
+    ["1sm", 1, 9, 18, "Ana pede um filho"],
+    ["1sm", 1, 19, 28, "O nascimento de Samuel"],
+    ["1sm", 2, 1, 11, "O cântico de gratidão de Ana"],
+    ["1sm", 3, 1, 10, "Fala, Senhor, que teu servo escuta"],
+    ["1sm", 3, 15, 21, "Samuel conta a visão"],
+    ["1sm", 8, 1, 9, "Israel pede um rei"],
+    ["1sm", 8, 10, 18, "A advertência de Samuel"],
+    ["1sm", 9, 1, 27, "Saul é escolhido rei"],
+    ["1sm", 10, 1, 8, "Samuel unge Saul"],
+    ["1sm", 10, 9, 16, "Os sinais de Samuel se cumprem"],
+    ["1sm", 10, 17, 27, "Saul é proclamado rei"],
+    ["1sm", 11, 1, 11, "Saul derrota os amonitas"],
+    ["1sm", 12, 1, 25, "O discurso de despedida de Samuel"],
+    ["1sm", 13, 8, 15, "O sacrifício ilegítimo de Saul"],
+    ["1sm", 13, 16, 23, "Israel sem armas"],
+    ["1sm", 14, 24, 36, "Jônatas come o mel"],
+    ["1sm", 14, 37, 46, "O povo salva Jônatas"],
+    ["1sm", 14, 47, 52, "As vitórias de Saul"],
+    ["1sm", 15, 1, 9, "A desobediência de Saul"],
+    ["1sm", 15, 10, 23, "Samuel repreende Saul"],
+    ["1sm", 15, 24, 35, "A confissão de Saul"],
+    ["1sm", 16, 1, 13, "A unção de Davi"],
+    ["1sm", 16, 14, 23, "Davi serve a Saul"],
+    ["1sm", 17, 1, 11, "O desafio de Golias"],
+    ["1sm", 17, 12, 37, "Davi aceita o desafio"],
+    ["1sm", 17, 38, 58, "Davi mata Golias"],
+    ["1sm", 18, 5, 16, "Saul tem inveja de Davi"],
+    ["1sm", 18, 17, 30, "Davi se casa com Mical"],
+    ["1sm", 19, 1, 24, "Saul tenta matar Davi"],
+    ["1sm", 20, 1, 9, "Jônatas ajuda Davi"],
+    ["1sm", 20, 10, 29, "Jônatas e Davi renovam a aliança"],
+    ["1sm", 20, 30, 42, "Saul tenta matar Jônatas"],
+    ["1sm", 21, 1, 7, "Davi come os pães consagrados"],
+    ["1sm", 21, 8, 15, "Davi foge para Gate"],
+    ["1sm", 23, 1, 6, "Davi liberta Queila"],
+    ["1sm", 23, 7, 29, "Saul persegue Davi"],
+    ["1sm", 24, 1, 15, "Davi poupa Saul"],
+    ["1sm", 24, 16, 22, "O juramento de Davi a Saul"],
+    ["1sm", 25, 2, 17, "Davi, Nabal e Abigail"],
+    ["1sm", 25, 18, 38, "Abigail intercede por Nabal"],
+    ["1sm", 25, 39, 44, "Davi se casa com Abigail"],
+    ["1sm", 26, 1, 12, "Davi poupa Saul outra vez"],
+    ["1sm", 26, 13, 20, "Davi repreende Abner"],
+    ["1sm", 28, 7, 25, "Saul e a médium de En-Dor"],
+    ["1sm", 30, 1, 6, "Os amalequitas atacam Ziclague"],
+    ["1sm", 30, 7, 20, "Davi destrói os amalequitas"],
+    ["1sm", 30, 21, 31, "A divisão dos despojos"],
+    ["1sm", 31, 1, 6, "A derrota e a morte de Saul"],
+    ["2sm", 1, 1, 16, "Davi recebe a notícia da morte de Saul"],
+    ["2sm", 1, 17, 27, "O lamento de Davi por Saul e Jônatas"],
+    ["2sm", 2, 1, 7, "Davi é ungido rei de Judá"],
+    ["2sm", 2, 12, 32, "A batalha de Gibeom"],
+    ["2sm", 3, 6, 21, "Abner se une a Davi"],
+    ["2sm", 3, 22, 30, "Joabe assassina Abner"],
+    ["2sm", 3, 31, 39, "Davi chora por Abner"],
+    ["2sm", 4, 1, 8, "O assassinato de Is-Bosete"],
+    ["2sm", 5, 6, 11, "Davi conquista Jerusalém"],
+    ["2sm", 6, 5, 11, "Uzá toca na arca"],
+    ["2sm", 6, 16, 23, "O desprezo de Mical por Davi"],
+    ["2sm", 7, 1, 17, "A aliança de Deus com Davi"],
+    ["2sm", 7, 18, 29, "A oração de gratidão de Davi"],
+    ["2sm", 8, 1, 14, "As vitórias de Davi"],
+    ["2sm", 9, 1, 13, "Davi e Mefibosete"],
+    ["2sm", 10, 1, 8, "Os mensageiros de Davi humilhados"],
+    ["2sm", 10, 9, 19, "Davi derrota Amom e a Síria"],
+    ["2sm", 11, 1, 13, "Davi e Bate-Seba"],
+    ["2sm", 11, 14, 25, "Davi trama a morte de Urias"],
+    ["2sm", 12, 1, 13, "Natã repreende Davi"],
+    ["2sm", 12, 13, 23, "A perda e o arrependimento de Davi"],
+    ["2sm", 12, 26, 31, "A tomada de Rabá"],
+    ["2sm", 13, 1, 22, "Amnom e Tamar"],
+    ["2sm", 13, 23, 33, "A vingança de Absalão contra Amnom"],
+    ["2sm", 13, 34, 39, "Absalão foge para Gesur"],
+    ["2sm", 14, 1, 27, "Absalão volta a Jerusalém"],
+    ["2sm", 14, 28, 33, "Absalão se reconcilia com Davi"],
+    ["2sm", 15, 1, 12, "A conspiração de Absalão"],
+    ["2sm", 15, 13, 29, "Davi foge de Jerusalém"],
+    ["2sm", 15, 30, 37, "Davi chora no monte das Oliveiras"],
+    ["2sm", 16, 5, 14, "Simei amaldiçoa Davi"],
+    ["2sm", 16, 15, 23, "Os conselhos de Aitofel e Husai"],
+    ["2sm", 17, 1, 14, "Husai contraria o conselho de Aitofel"],
+    ["2sm", 17, 15, 29, "O aviso de Husai salva Davi"],
+    ["2sm", 18, 1, 18, "A morte de Absalão"],
+    ["2sm", 18, 19, 33, "Davi chora por Absalão"],
+    ["2sm", 19, 1, 7, "Joabe repreende Davi"],
+    ["2sm", 19, 8, 15, "Davi volta a reinar"],
+    ["2sm", 19, 16, 23, "Simei é perdoado"],
+    ["2sm", 19, 24, 30, "Mefibosete é desculpado"],
+    ["2sm", 19, 31, 40, "A bondade de Davi para com Barzilai"],
+    ["2sm", 20, 1, 26, "A rebelião de Seba"],
+    ["2sm", 21, 1, 14, "Davi vinga os gibeonitas"],
+    ["2sm", 22, 1, 51, "O cântico de libertação de Davi"],
+    ["2sm", 23, 1, 7, "O último cântico de Davi"],
+    ["1rs", 1, 5, 10, "Adonias usurpa o reino"],
+    ["1rs", 1, 11, 27, "Natã e Bate-Seba diante de Davi"],
+    ["1rs", 1, 32, 40, "Salomão é ungido rei"],
+    ["1rs", 1, 41, 53, "Adonias sabe que Salomão é rei"],
+    ["1rs", 2, 1, 9, "Davi instrui Salomão"],
+    ["1rs", 2, 13, 27, "A execução de Adonias"],
+    ["1rs", 2, 28, 35, "A execução de Joabe"],
+    ["1rs", 2, 36, 46, "A execução de Simei"],
+    ["1rs", 3, 1, 15, "Salomão pede sabedoria"],
+    ["1rs", 3, 16, 28, "O julgamento sábio de Salomão"],
+    ["1rs", 4, 1, 6, "Os príncipes de Salomão"],
+    ["1rs", 4, 7, 19, "Os doze intendentes de Salomão"],
+    ["1rs", 4, 20, 28, "A prosperidade de Salomão"],
+    ["1rs", 4, 29, 34, "A sabedoria de Salomão"],
+    ["1rs", 5, 1, 6, "Os preparativos para o templo"],
+    ["1rs", 5, 7, 12, "A resposta de Hirão a Salomão"],
+    ["1rs", 5, 13, 18, "Os trabalhadores de Salomão"],
+    ["1rs", 6, 5, 10, "As câmaras"],
+    ["1rs", 6, 14, 22, "O interior do templo"],
+    ["1rs", 6, 23, 30, "Os querubins"],
+    ["1rs", 7, 1, 12, "O palácio de Salomão"],
+    ["1rs", 7, 13, 22, "As colunas e os capitéis"],
+    ["1rs", 7, 27, 37, "As dez bases de bronze"],
+    ["1rs", 7, 40, 47, "A conclusão das obras de bronze"],
+    ["1rs", 8, 12, 21, "Salomão bendiz o Senhor"],
+    ["1rs", 8, 22, 53, "A oração de Salomão na dedicação do templo"],
+    ["1rs", 8, 54, 61, "A bênção de Salomão"],
+    ["1rs", 9, 1, 9, "A resposta do Senhor a Salomão"],
+    ["1rs", 9, 10, 28, "Outras realizações de Salomão"],
+    ["1rs", 10, 1, 13, "A rainha de Sabá"],
+    ["1rs", 10, 14, 29, "A riqueza e o esplendor de Salomão"],
+    ["1rs", 11, 14, 22, "A volta de Hadade"],
+    ["1rs", 11, 26, 40, "A rebelião de Jeroboão"],
+    ["1rs", 12, 1, 15, "A revolta contra Roboão"],
+    ["1rs", 12, 25, 33, "A idolatria de Jeroboão"],
+    ["1rs", 13, 1, 10, "A mão de Jeroboão se seca"],
+    ["1rs", 13, 11, 34, "O velho profeta e o homem de Deus"],
+    ["1rs", 14, 25, 31, "Sisaque ataca Jerusalém"],
+    ["1rs", 15, 1, 8, "Abias reina em Judá"],
+    ["1rs", 15, 9, 15, "Asa reina em Judá"],
+    ["1rs", 15, 16, 22, "A guerra entre Asa e Baasa"],
+    ["1rs", 15, 25, 32, "Nadabe reina em Israel"],
+    ["1rs", 16, 8, 14, "Elá reina em Israel"],
+    ["1rs", 16, 15, 20, "Zinri reina em Israel"],
+    ["1rs", 16, 21, 28, "Onri reina em Israel"],
+    ["1rs", 16, 29, 34, "Acabe reina em Israel e se casa com Jezabel"],
+    ["1rs", 17, 1, 7, "Os corvos alimentam Elias"],
+    ["1rs", 17, 8, 16, "A viúva de Sarepta"],
+    ["1rs", 17, 17, 24, "Elias ressuscita o filho da viúva"],
+    ["1rs", 18, 1, 15, "A mensagem de Elias a Acabe"],
+    ["1rs", 18, 16, 35, "Elias no monte Carmelo"],
+    ["1rs", 18, 41, 46, "O Senhor manda a chuva"],
+    ["1rs", 19, 1, 8, "Elias foge de Jezabel"],
+    ["1rs", 19, 9, 18, "Deus na brisa suave"],
+    ["1rs", 20, 1, 12, "Ben-Hadade ataca Samaria"],
+    ["1rs", 20, 13, 25, "Acabe derrota Ben-Hadade"],
+    ["1rs", 20, 35, 43, "Um profeta repreende Acabe"],
+    ["1rs", 21, 1, 7, "A vinha de Nabote"],
+    ["1rs", 21, 8, 16, "A trama de Jezabel"],
+    ["1rs", 21, 17, 24, "Elias denuncia Acabe e Jezabel"],
+    ["1rs", 22, 1, 12, "Acabe e os falsos profetas"],
+    ["1rs", 22, 13, 28, "Micaías profetiza contra Acabe"],
+    ["1rs", 22, 29, 40, "A derrota e a morte de Acabe"],
+    ["1rs", 22, 41, 50, "Josafá reina em Judá"],
+    ["2rs", 1, 1, 16, "Elias denuncia Acazias"],
+    ["2rs", 2, 1, 14, "Elias é levado ao céu"],
+    ["2rs", 3, 1, 27, "A rebelião de Moabe"],
+    ["2rs", 4, 1, 7, "O azeite da viúva"],
+    ["2rs", 4, 8, 17, "A sunamita"],
+    ["2rs", 4, 18, 37, "Eliseu ressuscita o filho da sunamita"],
+    ["2rs", 5, 1, 14, "Naamã é curado da lepra"],
+    ["2rs", 5, 15, 27, "A ganância e a lepra de Geazi"],
+    ["2rs", 6, 1, 7, "O machado que flutuou"],
+    ["2rs", 6, 8, 23, "Eliseu captura os sírios cegos"],
+    ["2rs", 6, 24, 33, "O cerco e a fome em Samaria"],
+    ["2rs", 7, 3, 15, "Os sírios fogem"],
+    ["2rs", 8, 1, 6, "A terra da sunamita é devolvida"],
+    ["2rs", 8, 7, 15, "Hazael mata Ben-Hadade"],
+    ["2rs", 9, 1, 13, "Jeú é ungido rei de Israel"],
+    ["2rs", 9, 14, 29, "Jeú mata Jorão e Acazias"],
+    ["2rs", 9, 30, 37, "A morte violenta de Jezabel"],
+    ["2rs", 10, 28, 33, "Jeú repete os pecados de Jeroboão"],
+    ["2rs", 11, 4, 12, "Joás é ungido rei de Judá"],
+    ["2rs", 12, 1, 16, "Joás restaura o templo"],
+    ["2rs", 13, 1, 9, "Jeoacaz reina em Israel"],
+    ["2rs", 13, 14, 25, "A última profecia de Eliseu"],
+    ["2rs", 14, 1, 7, "Amazias reina em Judá"],
+    ["2rs", 14, 8, 14, "Jeoás derrota Amazias"],
+    ["2rs", 14, 23, 29, "Jeroboão II reina em Israel"],
+    ["2rs", 15, 1, 7, "Azarias reina em Judá"],
+    ["2rs", 15, 17, 22, "Menaém reina em Israel"],
+    ["2rs", 15, 32, 38, "Jotão reina em Judá"],
+    ["2rs", 16, 1, 9, "Acaz reina em Judá"],
+    ["2rs", 16, 10, 20, "A idolatria de Acaz"],
+    ["2rs", 17, 5, 23, "Israel é levado cativo para a Assíria"],
+    ["2rs", 17, 24, 41, "Samaria é repovoada"],
+    ["2rs", 18, 1, 12, "Ezequias destrói a idolatria em Judá"],
+    ["2rs", 18, 17, 37, "Senaqueribe ameaça Jerusalém"],
+    ["2rs", 19, 1, 7, "A mensagem de libertação de Isaías"],
+    ["2rs", 19, 8, 13, "A carta blasfema de Senaqueribe"],
+    ["2rs", 19, 14, 19, "A oração de Ezequias"],
+    ["2rs", 19, 20, 34, "A queda de Senaqueribe é anunciada"],
+    ["2rs", 20, 1, 11, "A doença e a cura de Ezequias"],
+    ["2rs", 21, 1, 9, "Manassés reina em Judá"],
+    ["2rs", 21, 10, 18, "As idolatrias de Manassés são repreendidas"],
+    ["2rs", 21, 19, 26, "Amom reina em Judá"],
+    ["2rs", 22, 8, 13, "Hilquias encontra o livro da Lei"],
+    ["2rs", 22, 14, 20, "A profecia de Hulda"],
+    ["2rs", 23, 4, 20, "Josias destrói a idolatria"],
+    ["2rs", 23, 21, 27, "Josias restaura a Páscoa"],
+    ["2rs", 24, 10, 17, "O cativeiro de Jerusalém"],
+    ["2rs", 25, 1, 7, "Nabucodonosor sitia Jerusalém"],
+    ["2rs", 25, 8, 17, "A destruição do templo"],
+    ["1cr", 16, 7, 22, "Os salmos de gratidão de Davi"],
+    ["1cr", 17, 1, 15, "A aliança de Deus com Davi"],
+    ["1cr", 17, 16, 27, "A oração de gratidão de Davi"],
+    ["1cr", 29, 10, 20, "A oração de bênção de Davi"],
+    ["2cr", 1, 1, 13, "Salomão pede sabedoria"],
+    ["2cr", 6, 12, 42, "A oração de Salomão na dedicação do templo"],
+    ["2cr", 20, 5, 13, "A oração de Josafá"],
+    ["ed", 1, 1, 6, "O decreto de Ciro"],
+    ["ed", 3, 1, 7, "Os sacrifícios são restaurados"],
+    ["ed", 3, 8, 13, "Começa a restauração do templo"],
+    ["ed", 4, 6, 16, "A oposição no tempo de Assuero e Artaxerxes"],
+    ["ed", 4, 17, 24, "O decreto de Artaxerxes"],
+    ["ed", 5, 6, 17, "A carta de Tatenai a Dario"],
+    ["ed", 6, 1, 12, "O decreto de Dario"],
+    ["ed", 7, 1, 10, "Esdras chega a Jerusalém"],
+    ["ed", 7, 11, 26, "A carta de Artaxerxes a Esdras"],
+    ["ed", 9, 5, 15, "A oração de confissão de Esdras"],
+    ["ed", 10, 6, 17, "O povo confessa o pecado"],
+    ["ed", 10, 18, 44, "Os culpados de casamentos mistos"],
+    ["ne", 1, 1, 11, "A oração de Neemias"],
+    ["ne", 2, 1, 10, "Neemias é enviado a Jerusalém"],
+    ["ne", 4, 1, 8, "A obra é ridicularizada"],
+    ["ne", 4, 9, 23, "O desânimo é vencido"],
+    ["ne", 5, 1, 13, "Neemias defende os oprimidos"],
+    ["ne", 5, 14, 19, "A generosidade de Neemias"],
+    ["ne", 6, 1, 14, "A conspiração de Sambalate"],
+    ["ne", 8, 1, 12, "A leitura da Lei"],
+    ["ne", 9, 1, 38, "O povo confessa os seus pecados"],
+    ["ne", 10, 1, 27, "Os que assinaram a aliança"],
+    ["ne", 11, 1, 19, "Os novos moradores de Jerusalém"],
+    ["ne", 11, 20, 36, "Os que moravam fora de Jerusalém"],
+    ["ne", 13, 4, 9, "O templo é purificado"],
+    ["ne", 13, 15, 22, "O sábado é restaurado"],
+    ["ne", 13, 23, 31, "Os casamentos mistos são proibidos"],
+    ["et", 1, 13, 22, "A rainha Vasti é deposta"],
+    ["et", 2, 5, 16, "Ester alcança favor"],
+    ["et", 3, 1, 15, "A trama de Hamã contra os judeus"],
+    ["et", 4, 1, 17, "Mardoqueu apela a Ester"],
+    ["et", 5, 1, 8, "Ester se apresenta ao rei"],
+    ["et", 5, 9, 14, "A trama de Hamã contra Mardoqueu"],
+    ["et", 6, 1, 14, "Mardoqueu é honrado"],
+    ["et", 7, 1, 6, "Ester suplica pelo seu povo"],
+    ["et", 8, 1, 6, "Ester intercede pelos judeus"],
+    ["et", 8, 7, 17, "O decreto de Assuero"],
+    ["et", 9, 1, 10, "Os judeus vencem os inimigos"],
+    ["jó", 1, 6, 12, "O primeiro ataque de Satanás"],
+    ["jó", 1, 13, 22, "O Senhor deu, o Senhor tirou"],
+    ["jó", 2, 1, 10, "Jó perde a saúde"],
+    ["jó", 3, 1, 26, "Jó lamenta o dia em que nasceu"],
+    ["jó", 4, 1, 21, "Elifaz: os inocentes prosperam"],
+    ["jó", 5, 1, 27, "Elifaz: Deus abençoa quem o busca"],
+    ["jó", 6, 1, 30, "Jó responde: minha queixa é justa"],
+    ["jó", 7, 1, 21, "Jó continua: a vida parece vã"],
+    ["jó", 8, 1, 22, "Bildade: Jó deve se arrepender"],
+    ["jó", 9, 1, 35, "Jó: como discutir com Deus?"],
+    ["jó", 10, 1, 22, "A súplica de Jó a Deus"],
+    ["jó", 11, 1, 20, "Zofar repreende Jó"],
+    ["jó", 12, 1, 25, "Jó apresenta a sua causa"],
+    ["jó", 13, 1, 28, "Jó prepara a sua defesa"],
+    ["jó", 14, 1, 22, "Jó lamenta que a morte seja definitiva"],
+    ["jó", 15, 1, 35, "Elifaz: Jó não teme a Deus"],
+    ["jó", 16, 1, 22, "Jó critica os seus consoladores"],
+    ["jó", 17, 1, 16, "Jó se prepara para a morte"],
+    ["jó", 18, 1, 21, "Bildade: Deus castiga os ímpios"],
+    ["jó", 19, 1, 29, "Jó: o meu Redentor vive"],
+    ["jó", 20, 1, 29, "Zofar: a destruição espera os ímpios"],
+    ["jó", 21, 1, 34, "Jó: Deus castigará os ímpios"],
+    ["jó", 22, 1, 30, "Elifaz: o homem pode ser útil a Deus?"],
+    ["jó", 23, 1, 17, "Jó anseia por Deus"],
+    ["jó", 24, 1, 25, "Jó: o juízo dos ímpios"],
+    ["jó", 25, 1, 6, "Bildade: o homem não pode ser justo"],
+    ["jó", 26, 1, 14, "Jó: quem entende a majestade de Deus?"],
+    ["jó", 27, 1, 6, "Jó afirma a sua integridade"],
+    ["jó", 28, 1, 28, "Onde se acha a sabedoria?"],
+    ["jó", 29, 1, 25, "As bênçãos de outrora"],
+    ["jó", 30, 1, 14, "A honra de Jó vira desprezo"],
+    ["jó", 30, 15, 31, "A prosperidade de Jó vira desgraça"],
+    ["jó", 31, 1, 40, "O último apelo de Jó"],
+    ["jó", 32, 1, 22, "Eliú repreende os amigos de Jó"],
+    ["jó", 33, 1, 33, "Eliú repreende Jó"],
+    ["jó", 34, 1, 37, "Eliú confirma a justiça de Deus"],
+    ["jó", 35, 1, 16, "Eliú recorda a justiça de Deus"],
+    ["jó", 36, 1, 33, "Eliú descreve o poder de Deus"],
+    ["jó", 37, 1, 24, "Eliú proclama a majestade de Deus"],
+    ["jó", 38, 1, 18, "Deus responde a Jó"],
+    ["jó", 39, 1, 30, "O Senhor fala da sua criação"],
+    ["jó", 40, 6, 24, "O Senhor desafia Jó outra vez"],
+    ["jó", 41, 1, 34, "O poder do Senhor no leviatã"],
+    ["jó", 42, 1, 6, "Jó se rende"],
+    ["jó", 42, 10, 17, "O Senhor abençoa Jó"],
+    ["sl", 1, 0, 0, "Os dois caminhos"],
+    ["sl", 2, 0, 0, "O Messias vitorioso"],
+    ["sl", 3, 0, 0, "Livra-me, Senhor!"],
+    ["sl", 4, 0, 0, "Oração da noite"],
+    ["sl", 5, 0, 0, "Ouve as minhas palavras"],
+    ["sl", 6, 0, 0, "Não me repreendas na tua ira"],
+    ["sl", 7, 0, 0, "Em ti me refugio"],
+    ["sl", 8, 0, 0, "Que é o homem?"],
+    ["sl", 9, 0, 0, "Darei graças ao Senhor"],
+    ["sl", 10, 0, 0, "Os perigos do peregrino"],
+    ["sl", 11, 0, 0, "No Senhor me refugio"],
+    ["sl", 12, 0, 0, "Já não há fiéis"],
+    ["sl", 13, 0, 0, "Até quando, Senhor?"],
+    ["sl", 14, 0, 0, "Diz o insensato: não há Deus"],
+    ["sl", 15, 0, 0, "Quem habitará no teu santo monte?"],
+    ["sl", 16, 0, 0, "O Senhor é a minha herança"],
+    ["sl", 17, 0, 0, "Ouve a minha justa causa"],
+    ["sl", 18, 0, 0, "O Senhor é a minha rocha"],
+    ["sl", 19, 0, 0, "Os céus proclamam a glória de Deus"],
+    ["sl", 20, 0, 0, "O dia da angústia"],
+    ["sl", 21, 0, 0, "Depois da batalha"],
+    ["sl", 22, 0, 0, "Meu Deus, por que me abandonaste?"],
+    ["sl", 23, 0, 0, "O Senhor é meu pastor"],
+    ["sl", 24, 0, 0, "Ao Senhor pertence a terra"],
+    ["sl", 25, 0, 0, "A ti elevo a minha alma"],
+    ["sl", 26, 0, 0, "Faze-me justiça, Senhor"],
+    ["sl", 27, 0, 0, "O Senhor é minha luz"],
+    ["sl", 28, 0, 0, "O Senhor é a minha força"],
+    ["sl", 29, 0, 0, "Dai glória ao Senhor"],
+    ["sl", 30, 0, 0, "Mudaste o meu pranto em dança"],
+    ["sl", 31, 0, 0, "Nas tuas mãos entrego o meu espírito"],
+    ["sl", 32, 0, 0, "A alegria do perdão"],
+    ["sl", 33, 0, 0, "Louvor ao Criador"],
+    ["sl", 34, 0, 0, "Provai e vede"],
+    ["sl", 35, 0, 0, "Pleiteia contra os que me atacam, Senhor"],
+    ["sl", 36, 0, 0, "A transgressão do ímpio"],
+    ["sl", 37, 0, 0, "Agrada-te do Senhor"],
+    ["sl", 38, 0, 0, "Não me repreendas na tua ira"],
+    ["sl", 39, 0, 0, "Vigiarei os meus caminhos"],
+    ["sl", 40, 0, 0, "Esperei no Senhor"],
+    ["sl", 41, 0, 0, "A vitória sobre a traição"],
+    ["sl", 42, 0, 0, "Como a corça anseia"],
+    ["sl", 43, 0, 0, "Envia a tua luz"],
+    ["sl", 44, 0, 0, "Resgata-nos, ó Deus"],
+    ["sl", 45, 0, 0, "O meu coração transborda de boas palavras"],
+    ["sl", 46, 0, 0, "Deus é nosso refúgio"],
+    ["sl", 47, 0, 0, "Batei palmas, todos os povos"],
+    ["sl", 48, 0, 0, "A escravidão quebrada"],
+    ["sl", 49, 0, 0, "A fugacidade das riquezas"],
+    ["sl", 50, 0, 0, "O Poderoso convoca"],
+    ["sl", 51, 0, 0, "Miserere"],
+    ["sl", 52, 0, 0, "Por que te glorias na maldade?"],
+    ["sl", 53, 0, 0, "Diz o insensato: não há Deus"],
+    ["sl", 54, 0, 0, "Salva-me pelo teu nome"],
+    ["sl", 55, 0, 0, "Lança o teu fardo sobre o Senhor"],
+    ["sl", 56, 0, 0, "Tem misericórdia de mim, ó Deus"],
+    ["sl", 57, 0, 0, "Em ti se refugia a minha alma"],
+    ["sl", 58, 0, 0, "Deus julga a terra"],
+    ["sl", 59, 0, 0, "Livra-me dos meus inimigos"],
+    ["sl", 60, 0, 0, "A vitória com Deus"],
+    ["sl", 61, 0, 0, "Ouviste os meus votos"],
+    ["sl", 62, 0, 0, "Só em Deus repousa minha alma"],
+    ["sl", 63, 0, 0, "Minha alma tem sede de ti"],
+    ["sl", 64, 0, 0, "A língua que fere"],
+    ["sl", 65, 0, 0, "A ti, ó Deus, é devido o louvor em Sião"],
+    ["sl", 66, 0, 0, "Celebrai a Deus com júbilo"],
+    ["sl", 67, 0, 0, "Faça Deus resplandecer o seu rosto sobre nós"],
+    ["sl", 68, 0, 0, "Os inimigos de Deus se dispersam"],
+    ["sl", 69, 0, 0, "As águas me chegam ao pescoço"],
+    ["sl", 70, 0, 0, "Apressa-te, Senhor, em socorrer-me"],
+    ["sl", 71, 0, 0, "Sê a minha rocha de refúgio"],
+    ["sl", 72, 0, 0, "Dá ao rei os teus juízos"],
+    ["sl", 73, 0, 0, "Deus é bom para com Israel"],
+    ["sl", 74, 0, 0, "Por que nos rejeitaste para sempre?"],
+    ["sl", 75, 0, 0, "O justo juízo de Deus"],
+    ["sl", 76, 0, 0, "O nome de Deus é grande em Israel"],
+    ["sl", 77, 0, 0, "No dia da angústia busquei o Senhor"],
+    ["sl", 78, 0, 0, "Abrirei a boca em parábolas"],
+    ["sl", 79, 0, 0, "Uma oração por livramento"],
+    ["sl", 80, 0, 0, "Ouve-nos, ó Pastor de Israel"],
+    ["sl", 81, 0, 0, "Cantai com alegria a Deus, nossa força"],
+    ["sl", 82, 0, 0, "Deus preside a assembleia divina"],
+    ["sl", 83, 0, 0, "Ó Deus, não te cales"],
+    ["sl", 84, 0, 0, "Como são amáveis as tuas moradas"],
+    ["sl", 85, 0, 0, "Foste favorável à tua terra"],
+    ["sl", 86, 0, 0, "Provado, mas confiante"],
+    ["sl", 87, 0, 0, "O Senhor ama as portas de Sião"],
+    ["sl", 88, 0, 0, "Clamo diante de ti"],
+    ["sl", 89, 0, 0, "Cantarei para sempre o teu amor"],
+    ["sl", 90, 0, 0, "Ensina-nos a contar os dias"],
+    ["sl", 91, 0, 0, "À sombra do Altíssimo"],
+    ["sl", 92, 0, 0, "Quão grandes são as tuas obras!"],
+    ["sl", 93, 0, 0, "O Senhor reina!"],
+    ["sl", 94, 0, 0, "O Senhor não esquecerá o seu povo"],
+    ["sl", 95, 0, 0, "Não endureçais o coração"],
+    ["sl", 96, 0, 0, "Cantai ao Senhor, toda a terra"],
+    ["sl", 97, 0, 0, "Alegre-se a terra"],
+    ["sl", 98, 0, 0, "Cantai ao Senhor um cântico novo"],
+    ["sl", 99, 0, 0, "O Senhor reina!"],
+    ["sl", 100, 0, 0, "Aclamai o Senhor"],
+    ["sl", 101, 0, 0, "Não porei coisa má diante dos meus olhos"],
+    ["sl", 102, 0, 0, "A oração do aflito"],
+    ["sl", 103, 0, 0, "Bendize, ó minha alma"],
+    ["sl", 104, 0, 0, "Quão numerosas são as tuas obras, Senhor!"],
+    ["sl", 105, 0, 0, "Anunciai as suas maravilhas"],
+    ["sl", 106, 0, 0, "Louvai ao Senhor, porque ele é bom"],
+    ["sl", 107, 0, 0, "Gratidão pelo livramento"],
+    ["sl", 108, 0, 0, "A bênção do reino de Israel"],
+    ["sl", 109, 0, 0, "O cântico do caluniado"],
+    ["sl", 110, 0, 0, "O Messias fiel de Deus"],
+    ["sl", 111, 0, 0, "Majestosa é a sua obra"],
+    ["sl", 112, 0, 0, "A bênção de temer o Senhor"],
+    ["sl", 113, 0, 0, "O Senhor exalta o humilde"],
+    ["sl", 114, 0, 0, "Um salmo do êxodo"],
+    ["sl", 115, 0, 0, "Ao teu nome dá glória"],
+    ["sl", 116, 0, 0, "O Senhor ouviu a minha voz"],
+    ["sl", 117, 0, 0, "Louvai-o, todos os povos"],
+    ["sl", 118, 0, 0, "O Senhor está comigo"],
+    ["sl", 119, 0, 0, "A tua palavra é lâmpada para os meus pés"],
+    ["sl", 120, 0, 0, "Na minha angústia clamei ao Senhor"],
+    ["sl", 121, 0, 0, "De onde virá o meu socorro?"],
+    ["sl", 122, 0, 0, "Orai pela paz de Jerusalém"],
+    ["sl", 123, 0, 0, "A ti levanto os meus olhos"],
+    ["sl", 124, 0, 0, "O nosso socorro está no nome do Senhor"],
+    ["sl", 125, 0, 0, "O Senhor cerca o seu povo"],
+    ["sl", 126, 0, 0, "Os cativos de Sião são restaurados"],
+    ["sl", 127, 0, 0, "Os filhos são herança do Senhor"],
+    ["sl", 128, 0, 0, "A bênção de temer o Senhor"],
+    ["sl", 129, 0, 0, "As cordas dos ímpios"],
+    ["sl", 130, 0, 0, "Das profundezas"],
+    ["sl", 131, 0, 0, "Como criança no colo da mãe"],
+    ["sl", 132, 0, 0, "O Senhor escolheu Sião"],
+    ["sl", 133, 0, 0, "Como é bom viver em união!"],
+    ["sl", 134, 0, 0, "Bendizei o Senhor, todos os seus servos"],
+    ["sl", 135, 0, 0, "Louvai, servos do Senhor"],
+    ["sl", 136, 0, 0, "A sua benignidade dura para sempre"],
+    ["sl", 137, 0, 0, "Junto aos rios da Babilônia"],
+    ["sl", 138, 0, 0, "Um coração agradecido"],
+    ["sl", 139, 0, 0, "Senhor, tu me sondas e me conheces"],
+    ["sl", 140, 0, 0, "Livra-me dos homens maus"],
+    ["sl", 141, 0, 0, "Apressa-te a vir a mim"],
+    ["sl", 142, 0, 0, "Ergo a minha voz ao Senhor"],
+    ["sl", 143, 0, 0, "A ti estendo as minhas mãos"],
+    ["sl", 144, 0, 0, "Bendito seja o Senhor, a minha rocha"],
+    ["sl", 145, 0, 0, "O Senhor é bom para com todos"],
+    ["sl", 146, 0, 0, "Louva, ó minha alma, ao Senhor"],
+    ["sl", 147, 0, 0, "É bom cantar louvores"],
+    ["sl", 148, 0, 0, "Louvai ao Senhor desde os céus"],
+    ["sl", 149, 0, 0, "Cantai ao Senhor um cântico novo"],
+    ["sl", 150, 0, 0, "Tudo o que respira louve o Senhor"],
+    ["pv", 1, 1, 7, "O princípio do conhecimento"],
+    ["pv", 1, 8, 19, "A sedução do pecado"],
+    ["pv", 1, 20, 33, "A sabedoria clama em voz alta"],
+    ["pv", 2, 1, 22, "Os benefícios da sabedoria"],
+    ["pv", 3, 1, 12, "Confia no Senhor de todo o coração"],
+    ["pv", 3, 13, 35, "As bênçãos da sabedoria"],
+    ["pv", 4, 1, 27, "A instrução de um pai"],
+    ["pv", 5, 1, 23, "Evita a imoralidade"],
+    ["pv", 6, 1, 19, "Advertências contra a insensatez"],
+    ["pv", 6, 20, 35, "Advertências contra o adultério"],
+    ["pv", 7, 1, 27, "Advertências sobre a adúltera"],
+    ["pv", 8, 1, 36, "A excelência da sabedoria"],
+    ["pv", 9, 1, 12, "O caminho da sabedoria"],
+    ["pv", 9, 13, 18, "O caminho da insensatez"],
+    ["pv", 10, 1, 32, "Provérbios de Salomão: o filho sábio"],
+    ["pv", 11, 1, 31, "A balança enganosa"],
+    ["pv", 12, 1, 28, "Quem ama a disciplina ama o conhecimento"],
+    ["pv", 13, 1, 25, "A disciplina do pai"],
+    ["pv", 14, 1, 35, "A mulher sábia"],
+    ["pv", 15, 1, 33, "A resposta branda desvia o furor"],
+    ["pv", 16, 1, 33, "A resposta da língua vem do Senhor"],
+    ["pv", 17, 1, 28, "Melhor um bocado seco em paz"],
+    ["pv", 18, 1, 24, "O egoísmo de quem se isola"],
+    ["pv", 19, 1, 29, "O homem íntegro"],
+    ["pv", 20, 1, 30, "O vinho é escarnecedor"],
+    ["pv", 21, 1, 31, "O coração do rei"],
+    ["pv", 22, 1, 16, "O bom nome"],
+    ["pv", 23, 29, 35, "Ditos dos sábios"],
+    ["pv", 24, 23, 34, "Outros ditos dos sábios"],
+    ["pv", 25, 1, 28, "Mais provérbios de Salomão"],
+    ["pv", 26, 1, 28, "Comparações e instruções"],
+    ["pv", 27, 1, 27, "Não te glories do dia de amanhã"],
+    ["pv", 28, 1, 28, "A ousadia do justo"],
+    ["pv", 29, 1, 27, "O florescer dos justos"],
+    ["pv", 30, 1, 33, "As palavras de Agur"],
+    ["pv", 31, 1, 9, "As palavras ao rei Lemuel"],
+    ["pv", 31, 10, 31, "A mulher virtuosa"],
+    ["ec", 1, 1, 11, "Tudo é vaidade"],
+    ["ec", 1, 12, 18, "Com a sabedoria vem a tristeza"],
+    ["ec", 2, 1, 11, "A vaidade dos prazeres"],
+    ["ec", 2, 12, 17, "O sábio e o insensato"],
+    ["ec", 2, 18, 26, "A vaidade do trabalho"],
+    ["ec", 3, 1, 15, "Há tempo para tudo"],
+    ["ec", 3, 9, 15, "As obras de Deus permanecem para sempre"],
+    ["ec", 3, 16, 22, "Do pó ao pó"],
+    ["ec", 4, 1, 12, "O mal da opressão"],
+    ["ec", 5, 1, 7, "Aproximar-se de Deus com reverência"],
+    ["ec", 5, 8, 20, "A vaidade das riquezas"],
+    ["ec", 6, 1, 12, "A vaidade da vida"],
+    ["ec", 7, 1, 14, "O valor da sabedoria"],
+    ["ec", 7, 15, 29, "Os limites da sabedoria humana"],
+    ["ec", 8, 1, 9, "Obedece ao rei"],
+    ["ec", 9, 1, 6, "A morte chega a bons e maus"],
+    ["ec", 9, 13, 18, "A sabedoria vale mais que a força"],
+    ["ec", 10, 1, 20, "Sabedoria e insensatez"],
+    ["ec", 11, 1, 6, "Lança o teu pão sobre as águas"],
+    ["ec", 12, 1, 8, "Lembra-te do teu Criador"],
+    ["ec", 12, 9, 14, "O dever de todo homem"],
+    ["ct", 2, 3, 13, "A amada"],
+    ["ct", 3, 6, 11, "Salomão chega no dia do casamento"],
+    ["ct", 4, 1, 15, "O amado"],
+    ["ct", 5, 2, 8, "A amada"],
+    ["ct", 5, 10, 16, "A amada"],
+    ["ct", 6, 4, 9, "O amado"],
+    ["ct", 7, 1, 9, "O amado admira a amada"],
+    ["ct", 8, 6, 7, "O amor é forte como a morte"],
+    ["is", 1, 1, 9, "A rebelião de Judá"],
+    ["is", 1, 21, 31, "A corrupção de Sião"],
+    ["is", 2, 5, 22, "O dia do acerto de contas"],
+    ["is", 3, 1, 15, "O juízo sobre Jerusalém e Judá"],
+    ["is", 3, 16, 26, "Advertência às filhas de Sião"],
+    ["is", 4, 1, 6, "Um remanescente em Sião"],
+    ["is", 5, 1, 7, "O cântico da vinha"],
+    ["is", 5, 8, 30, "Ai dos ímpios"],
+    ["is", 6, 1, 8, "Eis-me aqui, envia-me"],
+    ["is", 7, 1, 9, "Uma mensagem a Acaz"],
+    ["is", 7, 10, 16, "O sinal do Emanuel"],
+    ["is", 7, 17, 25, "O juízo que virá"],
+    ["is", 8, 1, 10, "A invasão assíria é anunciada"],
+    ["is", 8, 11, 18, "Um chamado a temer a Deus"],
+    ["is", 9, 1, 7, "Um menino nos nasceu"],
+    ["is", 10, 5, 19, "O juízo sobre a Assíria"],
+    ["is", 10, 20, 34, "Um remanescente voltará"],
+    ["is", 11, 1, 9, "O rebento de Jessé"],
+    ["is", 12, 1, 6, "Ação de graças com alegria"],
+    ["is", 14, 3, 23, "A queda do rei da Babilônia"],
+    ["is", 16, 1, 14, "A destruição de Moabe"],
+    ["is", 18, 1, 7, "Uma mensagem à Etiópia"],
+    ["is", 19, 16, 25, "Uma bênção sobre a terra"],
+    ["is", 21, 1, 10, "Caiu Babilônia"],
+    ["is", 22, 1, 14, "O vale da visão"],
+    ["is", 22, 15, 25, "Uma mensagem a Sebna"],
+    ["is", 24, 1, 23, "O juízo de Deus sobre a terra"],
+    ["is", 25, 1, 12, "Louvor ao Deus vitorioso"],
+    ["is", 26, 1, 21, "Um cântico de salvação"],
+    ["is", 27, 1, 13, "A vinha do Senhor"],
+    ["is", 28, 1, 13, "O cativeiro de Efraim"],
+    ["is", 28, 14, 22, "Uma pedra angular em Sião"],
+    ["is", 29, 1, 16, "Ai da cidade de Davi"],
+    ["is", 29, 17, 24, "A santificação dos fiéis"],
+    ["is", 30, 1, 17, "A aliança inútil com o Egito"],
+    ["is", 30, 18, 33, "Deus terá misericórdia"],
+    ["is", 31, 1, 9, "Ai dos que confiam no Egito"],
+    ["is", 32, 1, 8, "Um rei justo"],
+    ["is", 32, 9, 20, "As mulheres de Jerusalém"],
+    ["is", 33, 1, 24, "O Senhor é exaltado"],
+    ["is", 34, 5, 17, "O juízo sobre Edom"],
+    ["is", 35, 1, 10, "A glória de Sião"],
+    ["is", 36, 1, 22, "Senaqueribe ameaça Jerusalém"],
+    ["is", 37, 1, 7, "A mensagem de libertação de Isaías"],
+    ["is", 37, 8, 13, "A carta blasfema de Senaqueribe"],
+    ["is", 37, 14, 20, "A oração de Ezequias"],
+    ["is", 37, 21, 35, "A queda de Senaqueribe é anunciada"],
+    ["is", 38, 1, 8, "A doença e a cura de Ezequias"],
+    ["is", 38, 9, 22, "O cântico de gratidão de Ezequias"],
+    ["is", 40, 1, 11, "Consolai o meu povo"],
+    ["is", 40, 28, 31, "Asas como águia"],
+    ["is", 41, 1, 20, "O socorro de Deus a Israel"],
+    ["is", 41, 21, 29, "Os ídolos vazios"],
+    ["is", 42, 1, 9, "Eis o meu servo"],
+    ["is", 42, 10, 17, "Um cântico novo de louvor"],
+    ["is", 42, 18, 25, "Israel é surdo e cego"],
+    ["is", 43, 1, 7, "Chamei-te pelo nome"],
+    ["is", 43, 14, 21, "Um caminho no deserto"],
+    ["is", 43, 22, 28, "A infidelidade de Israel"],
+    ["is", 44, 1, 20, "O Senhor escolheu Israel"],
+    ["is", 44, 21, 28, "Jerusalém será restaurada"],
+    ["is", 45, 1, 25, "Deus chama Ciro"],
+    ["is", 46, 1, 13, "Os ídolos da Babilônia"],
+    ["is", 47, 1, 15, "A humilhação da Babilônia"],
+    ["is", 48, 1, 11, "A teimosia de Israel"],
+    ["is", 48, 12, 22, "A libertação prometida a Israel"],
+    ["is", 49, 14, 16, "Eu não te esquecerei"],
+    ["is", 50, 4, 11, "A obediência do Servo"],
+    ["is", 51, 1, 16, "A salvação para Sião"],
+    ["is", 51, 17, 23, "A ira de Deus é afastada"],
+    ["is", 52, 1, 12, "A libertação de Jerusalém"],
+    ["is", 53, 1, 12, "O Servo sofredor"],
+    ["is", 54, 1, 17, "As bênçãos futuras de Sião"],
+    ["is", 55, 6, 11, "Buscai o Senhor"],
+    ["is", 56, 1, 8, "A salvação para os estrangeiros"],
+    ["is", 57, 3, 13, "Deus condena a idolatria"],
+    ["is", 57, 14, 21, "A cura para quem se arrepende"],
+    ["is", 58, 6, 11, "O jejum que agrada a Deus"],
+    ["is", 59, 1, 17, "O pecado nos separa de Deus"],
+    ["is", 60, 1, 22, "A glória futura de Sião"],
+    ["is", 61, 1, 3, "O Espírito do Senhor está sobre mim"],
+    ["is", 62, 1, 12, "A salvação de Sião e o seu novo nome"],
+    ["is", 63, 1, 6, "A vingança de Deus sobre as nações"],
+    ["is", 63, 7, 14, "As misericórdias de Deus lembradas"],
+    ["is", 64, 1, 12, "Uma oração pelo poder de Deus"],
+    ["is", 65, 1, 16, "Juízos e promessas"],
+    ["is", 65, 17, 25, "Novos céus e nova terra"],
+    ["is", 66, 1, 6, "O céu é o meu trono"],
+    ["is", 66, 7, 14, "Alegrai-vos com Jerusalém"],
+    ["is", 66, 15, 24, "Os juízos finais contra os ímpios"],
+    ["jr", 1, 4, 10, "O chamado de Jeremias"],
+    ["jr", 2, 1, 13, "Israel abandonou a Deus"],
+    ["jr", 2, 14, 22, "A consequência do pecado de Israel"],
+    ["jr", 2, 23, 37, "A infidelidade de Israel"],
+    ["jr", 3, 11, 25, "Um chamado ao arrependimento"],
+    ["jr", 4, 5, 18, "A desgraça que vem do norte"],
+    ["jr", 4, 19, 31, "O lamento por Judá"],
+    ["jr", 5, 1, 13, "Não há um justo"],
+    ["jr", 5, 14, 31, "O juízo é proclamado"],
+    ["jr", 6, 1, 21, "A última advertência a Jerusalém"],
+    ["jr", 6, 22, 30, "Uma invasão vinda do norte"],
+    ["jr", 7, 16, 29, "A idolatria de Judá persiste"],
+    ["jr", 8, 1, 13, "O pecado e o castigo de Judá"],
+    ["jr", 9, 1, 26, "Um lamento sobre Sião"],
+    ["jr", 10, 1, 16, "A soberania de Deus"],
+    ["jr", 10, 17, 25, "O cativeiro que virá sobre Judá"],
+    ["jr", 11, 1, 17, "A aliança quebrada"],
+    ["jr", 11, 18, 23, "Uma conspiração contra Jeremias"],
+    ["jr", 12, 5, 13, "A resposta de Deus a Jeremias"],
+    ["jr", 13, 1, 11, "O cinto de linho"],
+    ["jr", 13, 15, 27, "A ameaça do cativeiro"],
+    ["jr", 14, 1, 18, "Seca, fome, espada e peste"],
+    ["jr", 15, 1, 9, "O juízo continuará"],
+    ["jr", 15, 10, 18, "O lamento de Jeremias"],
+    ["jr", 16, 1, 13, "A desgraça é anunciada"],
+    ["jr", 16, 14, 21, "Deus restaurará Israel"],
+    ["jr", 17, 1, 11, "O pecado e o castigo de Judá"],
+    ["jr", 17, 12, 18, "A oração de Jeremias por livramento"],
+    ["jr", 17, 19, 27, "A restauração do sábado"],
+    ["jr", 18, 1, 6, "O oleiro e o barro"],
+    ["jr", 18, 18, 23, "Outra conspiração contra Jeremias"],
+    ["jr", 19, 1, 15, "O vaso quebrado"],
+    ["jr", 20, 1, 6, "Pasur persegue Jeremias"],
+    ["jr", 20, 7, 18, "A queixa de Jeremias"],
+    ["jr", 21, 1, 10, "Jerusalém cairá diante da Babilônia"],
+    ["jr", 22, 13, 23, "Uma advertência sobre Jeoaquim"],
+    ["jr", 22, 24, 30, "Uma advertência a Conias"],
+    ["jr", 23, 1, 8, "O Renovo justo de Davi"],
+    ["jr", 23, 9, 32, "Os profetas mentirosos"],
+    ["jr", 23, 33, 40, "As falsas profecias"],
+    ["jr", 24, 1, 10, "Os figos bons e os ruins"],
+    ["jr", 25, 1, 14, "Setenta anos de cativeiro"],
+    ["jr", 25, 15, 33, "O cálice da ira de Deus"],
+    ["jr", 26, 7, 15, "Jeremias é ameaçado de morte"],
+    ["jr", 27, 1, 22, "O jugo de Nabucodonosor"],
+    ["jr", 28, 1, 17, "A falsa profecia de Hananias"],
+    ["jr", 29, 11, 14, "Projetos de paz"],
+    ["jr", 29, 24, 32, "A mensagem a Semaías"],
+    ["jr", 30, 1, 24, "A restauração de Israel e de Judá"],
+    ["jr", 31, 1, 25, "O pranto se converte em alegria"],
+    ["jr", 31, 31, 34, "A nova aliança"],
+    ["jr", 32, 1, 15, "Jeremias compra o campo de Hanameel"],
+    ["jr", 32, 16, 25, "Jeremias ora para entender"],
+    ["jr", 32, 26, 35, "O Senhor responde a Jeremias"],
+    ["jr", 32, 36, 44, "Uma promessa de restauração"],
+    ["jr", 33, 1, 13, "A excelência da nação restaurada"],
+    ["jr", 33, 14, 26, "A aliança com Davi"],
+    ["jr", 34, 8, 22, "A libertação dos escravos hebreus"],
+    ["jr", 35, 1, 11, "A obediência dos recabitas"],
+    ["jr", 35, 12, 19, "Judá é repreendido"],
+    ["jr", 36, 1, 10, "O rolo de Jeremias é lido no templo"],
+    ["jr", 36, 11, 19, "O rolo de Jeremias é lido no palácio"],
+    ["jr", 36, 20, 26, "Jeoaquim queima o rolo"],
+    ["jr", 36, 27, 32, "Jeremias escreve o rolo de novo"],
+    ["jr", 37, 1, 10, "Jeremias adverte Zedequias"],
+    ["jr", 37, 11, 21, "Jeremias é preso"],
+    ["jr", 38, 1, 28, "Jeremias é lançado na cisterna"],
+    ["jr", 39, 1, 10, "A queda de Jerusalém"],
+    ["jr", 39, 11, 18, "Jeremias é libertado"],
+    ["jr", 40, 1, 6, "Jeremias permanece em Judá"],
+    ["jr", 40, 7, 12, "Gedalias governa Judá"],
+    ["jr", 41, 1, 10, "O assassinato de Gedalias"],
+    ["jr", 41, 11, 18, "Joanã resgata os cativos"],
+    ["jr", 42, 1, 22, "Advertência contra ir para o Egito"],
+    ["jr", 43, 1, 13, "Jeremias é levado para o Egito"],
+    ["jr", 44, 1, 14, "O juízo sobre os judeus no Egito"],
+    ["jr", 44, 20, 30, "A desgraça dos judeus"],
+    ["jr", 46, 1, 28, "O juízo sobre o Egito"],
+    ["jr", 48, 1, 47, "O juízo sobre Moabe"],
+    ["jr", 49, 1, 6, "O juízo sobre os amonitas"],
+    ["jr", 49, 7, 22, "O juízo sobre Edom"],
+    ["jr", 49, 28, 33, "O juízo sobre Quedar e Hazor"],
+    ["jr", 49, 34, 39, "O juízo sobre Elão"],
+    ["jr", 50, 4, 10, "Esperança para Israel e Judá"],
+    ["jr", 50, 11, 16, "A queda da Babilônia é certa"],
+    ["jr", 50, 21, 46, "A destruição da Babilônia"],
+    ["jr", 51, 1, 14, "O juízo sobre a Babilônia"],
+    ["jr", 51, 20, 58, "O castigo da Babilônia"],
+    ["jr", 51, 59, 64, "A mensagem de Jeremias a Seraías"],
+    ["jr", 52, 1, 11, "O relato da queda de Jerusalém"],
+    ["jr", 52, 12, 23, "A destruição do templo"],
+    ["jr", 52, 24, 30, "Os cativos levados para a Babilônia"],
+    ["lm", 1, 1, 22, "Como está solitária a cidade!"],
+    ["lm", 2, 1, 22, "A ira de Deus contra Jerusalém"],
+    ["lm", 3, 1, 18, "As aflições do profeta"],
+    ["lm", 3, 22, 33, "As misericórdias do Senhor"],
+    ["lm", 3, 37, 66, "A justiça de Deus"],
+    ["lm", 4, 1, 22, "A angústia de Sião"],
+    ["lm", 5, 1, 22, "Uma oração por restauração"],
+    ["ez", 1, 4, 14, "Os quatro seres viventes"],
+    ["ez", 1, 15, 21, "As quatro rodas"],
+    ["ez", 1, 22, 28, "A glória divina"],
+    ["ez", 2, 1, 10, "O chamado de Ezequiel"],
+    ["ez", 3, 1, 15, "Ezequiel come o rolo"],
+    ["ez", 3, 16, 27, "Um atalaia para Israel"],
+    ["ez", 4, 1, 8, "O sinal do cerco de Jerusalém"],
+    ["ez", 4, 9, 17, "O pão contaminado"],
+    ["ez", 5, 1, 10, "A navalha do juízo"],
+    ["ez", 5, 11, 17, "Fome, espada e dispersão"],
+    ["ez", 6, 1, 7, "O juízo contra a idolatria"],
+    ["ez", 6, 8, 14, "Um remanescente será abençoado"],
+    ["ez", 7, 1, 13, "A hora da ruína"],
+    ["ez", 7, 14, 27, "A desolação de Israel"],
+    ["ez", 8, 1, 18, "A visão da idolatria no templo"],
+    ["ez", 9, 1, 11, "A execução dos idólatras"],
+    ["ez", 10, 1, 22, "A glória de Deus deixa o templo"],
+    ["ez", 11, 1, 12, "O mal nos altos lugares"],
+    ["ez", 11, 13, 21, "Uma promessa de restauração"],
+    ["ez", 12, 1, 20, "Sinais do cativeiro que virá"],
+    ["ez", 12, 21, 28, "O provérbio presunçoso"],
+    ["ez", 13, 1, 16, "Repreensão aos falsos profetas"],
+    ["ez", 13, 17, 23, "Repreensão às falsas profetisas"],
+    ["ez", 14, 1, 11, "Os anciãos idólatras são condenados"],
+    ["ez", 14, 12, 23, "Quatro juízos terríveis"],
+    ["ez", 15, 1, 8, "Jerusalém, a videira inútil"],
+    ["ez", 16, 1, 34, "A infidelidade de Jerusalém"],
+    ["ez", 16, 35, 58, "O juízo sobre Jerusalém"],
+    ["ez", 17, 1, 10, "A parábola das duas águias e da videira"],
+    ["ez", 17, 11, 24, "A parábola explicada"],
+    ["ez", 18, 1, 32, "A alma que pecar, essa morrerá"],
+    ["ez", 19, 1, 14, "Lamento pelos príncipes de Israel"],
+    ["ez", 20, 1, 9, "A rebelião de Israel no Egito"],
+    ["ez", 20, 10, 26, "A rebelião de Israel no deserto"],
+    ["ez", 20, 27, 32, "A rebelião de Israel na terra"],
+    ["ez", 20, 33, 44, "Juízo e restauração"],
+    ["ez", 21, 1, 32, "A espada do juízo de Deus"],
+    ["ez", 22, 1, 16, "Os pecados de Jerusalém"],
+    ["ez", 22, 17, 22, "A fornalha que purifica"],
+    ["ez", 23, 1, 21, "As duas irmãs adúlteras"],
+    ["ez", 23, 22, 35, "Aoliba será castigada"],
+    ["ez", 23, 36, 49, "O juízo sobre as duas irmãs"],
+    ["ez", 24, 1, 14, "A parábola da panela"],
+    ["ez", 24, 15, 27, "A morte da esposa de Ezequiel"],
+    ["ez", 27, 1, 36, "Lamento por Tiro"],
+    ["ez", 28, 11, 19, "Lamento pelo rei de Tiro"],
+    ["ez", 29, 8, 16, "A desolação do Egito"],
+    ["ez", 30, 1, 19, "Lamento pelo Egito"],
+    ["ez", 30, 20, 26, "O poder do faraó é quebrado"],
+    ["ez", 31, 1, 18, "O Egito cairá como a Assíria"],
+    ["ez", 32, 1, 16, "Lamento pelo faraó, rei do Egito"],
+    ["ez", 32, 17, 32, "O Egito é lançado na cova"],
+    ["ez", 33, 1, 9, "Ezequiel, atalaia de Israel"],
+    ["ez", 33, 10, 20, "A mensagem do atalaia"],
+    ["ez", 33, 21, 33, "A notícia da queda de Jerusalém"],
+    ["ez", 34, 11, 24, "O bom pastor"],
+    ["ez", 34, 25, 31, "A aliança de paz"],
+    ["ez", 36, 1, 15, "Profecia aos montes de Israel"],
+    ["ez", 36, 24, 28, "Um coração novo"],
+    ["ez", 37, 1, 14, "Os ossos secos"],
+    ["ez", 37, 15, 28, "Uma só nação com um só rei"],
+    ["ez", 39, 21, 29, "Israel será restaurado"],
+    ["ez", 41, 5, 14, "O lado de fora do templo"],
+    ["ez", 41, 15, 26, "As estruturas internas"],
+    ["ez", 43, 1, 12, "A glória do Senhor volta ao templo"],
+    ["ez", 47, 1, 12, "As águas que saem do templo"],
+    ["ez", 47, 13, 23, "Os limites da terra"],
+    ["dn", 1, 1, 7, "Daniel é levado para a Babilônia"],
+    ["dn", 1, 8, 16, "A fidelidade de Daniel"],
+    ["dn", 2, 1, 13, "O sonho perturbador de Nabucodonosor"],
+    ["dn", 2, 14, 23, "O sonho é revelado a Daniel"],
+    ["dn", 2, 24, 45, "Daniel interpreta o sonho"],
+    ["dn", 3, 8, 18, "Sadraque, Mesaque e Abede-Nego são acusados"],
+    ["dn", 3, 19, 30, "A fornalha ardente"],
+    ["dn", 4, 4, 18, "O sonho da grande árvore"],
+    ["dn", 4, 19, 27, "Daniel interpreta o segundo sonho"],
+    ["dn", 4, 28, 33, "O segundo sonho se cumpre"],
+    ["dn", 5, 13, 31, "Daniel interpreta a escrita na parede"],
+    ["dn", 6, 1, 9, "A conspiração contra Daniel"],
+    ["dn", 6, 10, 24, "Daniel na cova dos leões"],
+    ["dn", 7, 1, 8, "A visão dos quatro animais"],
+    ["dn", 7, 15, 28, "As visões de Daniel interpretadas"],
+    ["dn", 8, 1, 14, "A visão do carneiro e do bode"],
+    ["dn", 8, 15, 27, "Gabriel interpreta a visão de Daniel"],
+    ["dn", 9, 1, 19, "A oração de Daniel pelo seu povo"],
+    ["dn", 9, 20, 27, "A profecia das setenta semanas"],
+    ["dn", 10, 1, 21, "A visão junto ao rio Tigre"],
+    ["dn", 11, 36, 45, "O rei que se exalta"],
+    ["dn", 12, 1, 13, "O tempo do fim"],
+    ["os", 1, 1, 11, "A esposa e os filhos de Oseias"],
+    ["os", 2, 1, 13, "O adultério de Israel é repreendido"],
+    ["os", 2, 14, 23, "A misericórdia de Deus para com Israel"],
+    ["os", 4, 1, 19, "A acusação de Deus contra o seu povo"],
+    ["os", 5, 1, 15, "O juízo sobre Israel e Judá"],
+    ["os", 6, 1, 11, "Israel e Judá não se arrependem"],
+    ["os", 7, 1, 16, "A iniquidade de Efraim"],
+    ["os", 8, 1, 14, "Israel colherá tempestade"],
+    ["os", 9, 1, 17, "O castigo de Israel"],
+    ["os", 10, 1, 15, "A retribuição pelo pecado de Israel"],
+    ["os", 11, 1, 9, "O amor de Deus por Israel"],
+    ["os", 12, 1, 14, "Repreensão a Efraim, Judá e Jacó"],
+    ["os", 13, 1, 8, "A ira de Deus contra Israel"],
+    ["os", 13, 9, 14, "Morte e ressurreição"],
+    ["os", 14, 4, 9, "Uma promessa de bênção"],
+    ["jl", 1, 1, 7, "A invasão dos gafanhotos"],
+    ["jl", 1, 13, 20, "Um chamado ao arrependimento"],
+    ["jl", 2, 12, 18, "Rasgai o coração"],
+    ["jl", 2, 18, 27, "A restauração prometida"],
+    ["jl", 3, 1, 16, "O Senhor julga as nações"],
+    ["am", 1, 1, 15, "O juízo sobre os vizinhos de Israel"],
+    ["am", 2, 1, 16, "O juízo sobre Moabe, Judá e Israel"],
+    ["am", 3, 1, 15, "Testemunhas contra Israel"],
+    ["am", 4, 1, 13, "O castigo não traz arrependimento"],
+    ["am", 5, 4, 15, "Um chamado ao arrependimento"],
+    ["am", 5, 16, 27, "Ai do Israel rebelde"],
+    ["am", 6, 1, 7, "Ai dos que vivem tranquilos em Sião"],
+    ["am", 6, 8, 14, "O orgulho de Israel"],
+    ["am", 7, 1, 9, "Os gafanhotos, o fogo e o prumo"],
+    ["am", 7, 10, 17, "Amazias acusa Amós"],
+    ["am", 8, 1, 14, "O cesto de frutos de verão"],
+    ["am", 9, 1, 10, "A destruição de Israel"],
+    ["ob", 1, 1, 14, "A destruição de Edom"],
+    ["ob", 1, 15, 21, "A libertação de Israel"],
+    ["jn", 1, 4, 10, "A grande tempestade"],
+    ["jn", 1, 11, 17, "Jonas é lançado ao mar"],
+    ["jn", 2, 1, 10, "A oração de Jonas"],
+    ["jn", 3, 1, 10, "A conversão de Nínive"],
+    ["jn", 4, 1, 11, "A ira de Jonas diante da compaixão do Senhor"],
+    ["mq", 1, 1, 7, "O juízo que virá"],
+    ["mq", 1, 8, 16, "Choro e lamento"],
+    ["mq", 2, 6, 11, "Repreensão aos falsos profetas"],
+    ["mq", 3, 1, 12, "Governantes e profetas condenados"],
+    ["mq", 4, 6, 13, "A restauração de Sião"],
+    ["mq", 5, 1, 6, "Um governante vindo de Belém"],
+    ["mq", 5, 7, 15, "O remanescente de Jacó"],
+    ["mq", 6, 6, 8, "O que o Senhor pede de ti"],
+    ["mq", 6, 9, 16, "O castigo de Israel"],
+    ["mq", 7, 1, 6, "A grande miséria de Israel"],
+    ["mq", 7, 7, 13, "A confissão e o consolo de Israel"],
+    ["mq", 7, 14, 20, "A compaixão de Deus por Israel"],
+    ["na", 2, 1, 13, "A queda de Nínive"],
+    ["na", 3, 1, 19, "O juízo sobre Nínive"],
+    ["hc", 1, 5, 11, "A resposta do Senhor"],
+    ["hc", 1, 12, 17, "A segunda queixa de Habacuque"],
+    ["hc", 2, 6, 20, "Ai dos caldeus"],
+    ["hc", 3, 1, 16, "A oração de Habacuque"],
+    ["hc", 3, 17, 19, "Ainda que a figueira não floresça"],
+    ["sf", 1, 1, 6, "Sofonias anuncia o juízo sobre Judá"],
+    ["sf", 1, 7, 18, "O dia do Senhor"],
+    ["sf", 3, 14, 18, "O Senhor exulta por ti"],
+    ["ag", 1, 1, 11, "Um chamado para reconstruir o templo"],
+    ["ag", 2, 1, 9, "A glória futura da casa de Deus"],
+    ["ag", 2, 10, 19, "Bênçãos para um povo impuro"],
+    ["zc", 1, 1, 6, "Um chamado ao arrependimento"],
+    ["zc", 1, 7, 17, "A visão dos cavalos"],
+    ["zc", 5, 5, 11, "A visão da mulher no cesto"],
+    ["zc", 6, 1, 8, "A visão dos quatro carros"],
+    ["zc", 6, 9, 15, "A coroa e o templo"],
+    ["zc", 7, 1, 14, "Um chamado à justiça e à misericórdia"],
+    ["zc", 8, 1, 23, "A restauração de Jerusalém"],
+    ["zc", 9, 1, 8, "A sentença contra os inimigos de Israel"],
+    ["zc", 10, 1, 12, "Judá e Israel serão restaurados"],
+    ["zc", 11, 1, 9, "O rebanho condenado"],
+    ["zc", 12, 1, 9, "A libertação futura de Jerusalém"],
+    ["zc", 13, 1, 6, "O fim da idolatria"],
+    ["zc", 14, 1, 15, "Os destruidores de Jerusalém serão destruídos"],
+    ["zc", 14, 16, 21, "Todas as nações adorarão o Rei"],
+    ["ml", 2, 10, 17, "A infidelidade de Judá"],
+    ["ml", 3, 6, 12, "Roubar a Deus"],
+    ["ml", 3, 13, 18, "O livro memorial"],
+    ["ml", 4, 1, 6, "O dia do Senhor"],
+    ["mt", 1, 18, 25, "O nascimento de Jesus"],
+    ["mt", 2, 1, 12, "A visita dos magos"],
+    ["mt", 3, 1, 12, "A missão de João Batista"],
+    ["mt", 4, 1, 11, "A tentação de Jesus"],
+    ["mt", 4, 12, 17, "Jesus começa o seu ministério"],
+    ["mt", 5, 1, 12, "As bem-aventuranças"],
+    ["mt", 5, 3, 12, "As bem-aventuranças"],
+    ["mt", 5, 13, 16, "Sal da terra e luz do mundo"],
+    ["mt", 5, 21, 26, "A ira e a reconciliação"],
+    ["mt", 5, 38, 48, "Amai os vossos inimigos"],
+    ["mt", 6, 5, 15, "O Pai-Nosso"],
+    ["mt", 6, 25, 34, "Não vos preocupeis"],
+    ["mt", 7, 1, 6, "Não julgueis"],
+    ["mt", 7, 7, 12, "Pedi e recebereis"],
+    ["mt", 7, 15, 23, "A árvore e o seu fruto"],
+    ["mt", 7, 24, 27, "A casa sobre a rocha"],
+    ["mt", 8, 5, 13, "A fé do centurião"],
+    ["mt", 8, 28, 34, "Os demônios e os porcos"],
+    ["mt", 9, 1, 8, "Jesus cura um paralítico"],
+    ["mt", 9, 18, 26, "O toque que cura"],
+    ["mt", 9, 27, 34, "Jesus cura cegos e um mudo"],
+    ["mt", 10, 5, 15, "A missão dos Doze"],
+    ["mt", 10, 16, 25, "Ovelhas no meio de lobos"],
+    ["mt", 10, 26, 31, "Temei somente a Deus"],
+    ["mt", 10, 34, 39, "Não paz, mas espada"],
+    ["mt", 11, 1, 6, "A pergunta de João"],
+    ["mt", 11, 7, 19, "Jesus dá testemunho de João"],
+    ["mt", 11, 25, 30, "Vinde a mim, vós que estais cansados"],
+    ["mt", 12, 1, 8, "O Senhor do sábado"],
+    ["mt", 12, 9, 14, "Jesus cura no sábado"],
+    ["mt", 12, 15, 21, "O servo escolhido de Deus"],
+    ["mt", 12, 22, 30, "Uma casa dividida"],
+    ["mt", 13, 1, 23, "O semeador"],
+    ["mt", 13, 10, 17, "Por que Jesus fala em parábolas"],
+    ["mt", 13, 18, 23, "A parábola do semeador explicada"],
+    ["mt", 13, 24, 30, "A parábola do joio"],
+    ["mt", 13, 36, 43, "A parábola do joio explicada"],
+    ["mt", 13, 44, 46, "O tesouro e a pérola"],
+    ["mt", 13, 47, 52, "A parábola da rede"],
+    ["mt", 13, 53, 58, "A rejeição em Nazaré"],
+    ["mt", 14, 1, 12, "A decapitação de João"],
+    ["mt", 14, 13, 21, "A multiplicação para cinco mil"],
+    ["mt", 14, 22, 33, "Jesus caminha sobre as águas"],
+    ["mt", 15, 1, 9, "A tradição dos anciãos"],
+    ["mt", 15, 10, 20, "O que contamina o homem"],
+    ["mt", 15, 21, 28, "A fé da mulher cananeia"],
+    ["mt", 15, 29, 39, "A multiplicação para quatro mil"],
+    ["mt", 16, 5, 12, "O fermento dos fariseus e saduceus"],
+    ["mt", 16, 13, 20, "Tu és Pedro"],
+    ["mt", 17, 1, 9, "A transfiguração"],
+    ["mt", 18, 21, 35, "Perdoar setenta vezes sete"],
+    ["mt", 19, 1, 12, "O ensino sobre o divórcio"],
+    ["mt", 19, 16, 30, "O jovem rico"],
+    ["mt", 20, 1, 16, "Os trabalhadores da vinha"],
+    ["mt", 20, 20, 28, "O pedido de uma mãe"],
+    ["mt", 20, 29, 34, "Os cegos à beira do caminho"],
+    ["mt", 21, 1, 11, "A entrada triunfal"],
+    ["mt", 21, 12, 17, "Jesus purifica o templo"],
+    ["mt", 21, 33, 46, "A parábola dos lavradores maus"],
+    ["mt", 22, 1, 14, "A parábola do banquete"],
+    ["mt", 22, 15, 22, "O tributo a César"],
+    ["mt", 22, 23, 33, "Os saduceus e a ressurreição"],
+    ["mt", 22, 34, 40, "O maior mandamento"],
+    ["mt", 22, 41, 46, "De quem o Cristo é filho?"],
+    ["mt", 23, 1, 36, "Ai dos escribas e fariseus"],
+    ["mt", 24, 1, 8, "A destruição do templo e outros sinais"],
+    ["mt", 24, 9, 14, "O testemunho a todas as nações"],
+    ["mt", 24, 15, 25, "A abominação da desolação"],
+    ["mt", 24, 26, 31, "A volta do Filho do Homem"],
+    ["mt", 24, 36, 51, "Vigiai a qualquer hora"],
+    ["mt", 25, 1, 13, "A parábola das dez virgens"],
+    ["mt", 25, 14, 30, "Os talentos"],
+    ["mt", 25, 31, 46, "O juízo final"],
+    ["mt", 26, 6, 13, "Jesus é ungido em Betânia"],
+    ["mt", 26, 20, 30, "A última ceia"],
+    ["mt", 26, 36, 46, "A agonia no Getsêmani"],
+    ["mt", 26, 47, 56, "A traição de Jesus"],
+    ["mt", 26, 57, 68, "Jesus diante do Sinédrio"],
+    ["mt", 26, 69, 75, "Pedro nega Jesus"],
+    ["mt", 27, 3, 10, "Judas se enforca"],
+    ["mt", 27, 15, 23, "A multidão escolhe Barrabás"],
+    ["mt", 27, 32, 44, "A crucificação"],
+    ["mt", 28, 1, 10, "A ressurreição"],
+    ["mt", 28, 16, 20, "Ide e fazei discípulos"],
+    ["mc", 1, 1, 11, "A missão de João Batista"],
+    ["mc", 1, 29, 34, "Jesus cura na casa de Pedro"],
+    ["mc", 1, 40, 45, "A súplica do leproso"],
+    ["mc", 2, 1, 12, "O paralítico descido pelo teto"],
+    ["mc", 2, 23, 28, "O Senhor do sábado"],
+    ["mc", 3, 1, 6, "Jesus cura no sábado"],
+    ["mc", 3, 7, 12, "Jesus cura as multidões"],
+    ["mc", 3, 13, 19, "Os doze apóstolos"],
+    ["mc", 3, 20, 27, "Uma casa dividida"],
+    ["mc", 4, 1, 9, "A parábola do semeador"],
+    ["mc", 4, 13, 20, "A parábola do semeador explicada"],
+    ["mc", 4, 35, 41, "A tempestade acalmada"],
+    ["mc", 5, 1, 20, "Os demônios e os porcos"],
+    ["mc", 5, 21, 43, "A filha de Jairo"],
+    ["mc", 6, 1, 6, "A rejeição em Nazaré"],
+    ["mc", 6, 7, 13, "A missão dos Doze"],
+    ["mc", 6, 14, 29, "A decapitação de João"],
+    ["mc", 6, 30, 44, "A multiplicação dos pães"],
+    ["mc", 6, 45, 52, "Jesus caminha sobre as águas"],
+    ["mc", 7, 1, 13, "A tradição dos anciãos"],
+    ["mc", 7, 14, 23, "O que contamina o homem"],
+    ["mc", 7, 24, 30, "A fé da mulher estrangeira"],
+    ["mc", 7, 31, 37, "O surdo e mudo"],
+    ["mc", 8, 1, 10, "A multiplicação para quatro mil"],
+    ["mc", 8, 14, 21, "O fermento dos fariseus e de Herodes"],
+    ["mc", 9, 1, 13, "A transfiguração"],
+    ["mc", 9, 14, 29, "Eu creio, ajuda a minha incredulidade"],
+    ["mc", 9, 33, 41, "O maior no Reino"],
+    ["mc", 9, 42, 48, "Tentações e ofensas"],
+    ["mc", 10, 1, 12, "O ensino sobre o divórcio"],
+    ["mc", 10, 17, 27, "O jovem rico"],
+    ["mc", 10, 35, 45, "O pedido de Tiago e João"],
+    ["mc", 10, 46, 52, "O cego Bartimeu"],
+    ["mc", 11, 1, 11, "A entrada triunfal"],
+    ["mc", 11, 20, 26, "A figueira seca"],
+    ["mc", 11, 27, 33, "A autoridade de Jesus é questionada"],
+    ["mc", 12, 1, 12, "A parábola dos lavradores maus"],
+    ["mc", 12, 18, 27, "Os saduceus e a ressurreição"],
+    ["mc", 12, 28, 34, "O maior mandamento"],
+    ["mc", 12, 41, 44, "A oferta da viúva"],
+    ["mc", 13, 1, 8, "A destruição do templo e outros sinais"],
+    ["mc", 13, 14, 23, "A abominação da desolação"],
+    ["mc", 13, 32, 37, "Vigiai a qualquer hora"],
+    ["mc", 14, 3, 9, "Jesus é ungido em Betânia"],
+    ["mc", 14, 17, 26, "A última ceia"],
+    ["mc", 14, 32, 42, "Jesus ora no Getsêmani"],
+    ["mc", 14, 43, 52, "A traição de Jesus"],
+    ["mc", 14, 53, 65, "Jesus diante do Sinédrio"],
+    ["mc", 14, 66, 72, "Pedro nega Jesus"],
+    ["mc", 15, 6, 11, "A multidão escolhe Barrabás"],
+    ["mc", 15, 21, 32, "A crucificação"],
+    ["mc", 15, 42, 47, "O sepultamento de Jesus"],
+    ["mc", 16, 1, 8, "O túmulo vazio"],
+    ["lc", 1, 5, 25, "Gabriel anuncia o nascimento de João"],
+    ["lc", 1, 26, 38, "A anunciação"],
+    ["lc", 1, 39, 56, "A visitação e o Magnificat"],
+    ["lc", 1, 46, 56, "O cântico de Maria"],
+    ["lc", 1, 57, 66, "O nascimento de João Batista"],
+    ["lc", 1, 67, 80, "O cântico de Zacarias"],
+    ["lc", 2, 1, 20, "O nascimento de Jesus"],
+    ["lc", 2, 8, 20, "Os pastores e os anjos"],
+    ["lc", 2, 22, 40, "A apresentação no templo"],
+    ["lc", 2, 25, 35, "A profecia de Simeão"],
+    ["lc", 2, 41, 52, "Jesus entre os doutores"],
+    ["lc", 3, 1, 20, "A missão de João Batista"],
+    ["lc", 4, 1, 13, "A tentação de Jesus"],
+    ["lc", 4, 16, 21, "Jesus na sinagoga de Nazaré"],
+    ["lc", 5, 1, 11, "A pesca milagrosa"],
+    ["lc", 5, 17, 26, "Jesus cura um paralítico"],
+    ["lc", 5, 27, 32, "Jesus chama Levi"],
+    ["lc", 6, 6, 11, "Jesus cura no sábado"],
+    ["lc", 6, 27, 36, "Amai os vossos inimigos"],
+    ["lc", 6, 37, 42, "Não julgueis"],
+    ["lc", 7, 1, 10, "A fé do centurião"],
+    ["lc", 7, 11, 17, "Jesus ressuscita o filho de uma viúva"],
+    ["lc", 7, 18, 23, "A pergunta de João"],
+    ["lc", 7, 24, 35, "Jesus dá testemunho de João"],
+    ["lc", 7, 36, 50, "A pecadora perdoada"],
+    ["lc", 8, 4, 15, "A parábola do semeador"],
+    ["lc", 8, 26, 39, "Os demônios e os porcos"],
+    ["lc", 8, 40, 56, "O toque que cura"],
+    ["lc", 9, 1, 6, "A missão dos Doze"],
+    ["lc", 9, 10, 17, "A multiplicação para cinco mil"],
+    ["lc", 9, 28, 36, "A transfiguração"],
+    ["lc", 9, 37, 42, "O menino com espírito maligno"],
+    ["lc", 9, 51, 56, "Os samaritanos rejeitam Jesus"],
+    ["lc", 9, 57, 62, "O preço do discipulado"],
+    ["lc", 10, 1, 12, "Jesus envia os setenta e dois"],
+    ["lc", 10, 25, 37, "O bom samaritano"],
+    ["lc", 10, 38, 42, "Marta e Maria"],
+    ["lc", 11, 1, 13, "Senhor, ensina-nos a orar"],
+    ["lc", 11, 5, 13, "Pedi, buscai, batei"],
+    ["lc", 11, 14, 23, "Uma casa dividida"],
+    ["lc", 11, 37, 54, "Ai dos fariseus e dos doutores da Lei"],
+    ["lc", 12, 13, 21, "O rico insensato"],
+    ["lc", 12, 22, 31, "Não vos inquieteis"],
+    ["lc", 12, 35, 48, "Vigiai a qualquer hora"],
+    ["lc", 13, 10, 17, "Jesus cura uma mulher encurvada"],
+    ["lc", 13, 22, 30, "A porta estreita"],
+    ["lc", 14, 1, 6, "Jesus cura um homem hidrópico"],
+    ["lc", 14, 7, 14, "A parábola dos convidados"],
+    ["lc", 14, 15, 24, "A parábola do banquete"],
+    ["lc", 14, 25, 33, "O preço do discipulado"],
+    ["lc", 15, 1, 10, "A ovelha e a moeda perdidas"],
+    ["lc", 15, 11, 32, "O filho pródigo"],
+    ["lc", 16, 1, 13, "A parábola do administrador astuto"],
+    ["lc", 16, 19, 31, "O rico e Lázaro"],
+    ["lc", 17, 5, 10, "O poder da fé"],
+    ["lc", 17, 11, 19, "Os dez leprosos"],
+    ["lc", 17, 20, 37, "A vinda do Reino"],
+    ["lc", 18, 1, 8, "A viúva persistente"],
+    ["lc", 18, 9, 14, "O fariseu e o publicano"],
+    ["lc", 18, 18, 30, "O jovem rico de posição"],
+    ["lc", 18, 35, 43, "Jesus cura um mendigo cego"],
+    ["lc", 19, 1, 10, "Zaqueu"],
+    ["lc", 19, 11, 27, "A parábola das dez minas"],
+    ["lc", 19, 28, 40, "A entrada triunfal"],
+    ["lc", 20, 1, 8, "A autoridade de Jesus é questionada"],
+    ["lc", 20, 9, 18, "A parábola dos lavradores maus"],
+    ["lc", 20, 19, 26, "O tributo a César"],
+    ["lc", 20, 27, 40, "Os saduceus e a ressurreição"],
+    ["lc", 21, 10, 19, "O testemunho a todas as nações"],
+    ["lc", 22, 7, 13, "A preparação da Páscoa"],
+    ["lc", 22, 14, 23, "A última ceia"],
+    ["lc", 22, 24, 30, "Quem é o maior?"],
+    ["lc", 22, 31, 38, "Jesus anuncia a negação de Pedro"],
+    ["lc", 22, 39, 46, "Jesus ora no monte das Oliveiras"],
+    ["lc", 22, 47, 53, "A traição de Jesus"],
+    ["lc", 22, 54, 62, "Pedro nega Jesus"],
+    ["lc", 22, 66, 71, "Jesus diante do Sinédrio"],
+    ["lc", 23, 6, 12, "Jesus diante de Herodes"],
+    ["lc", 23, 13, 25, "A multidão escolhe Barrabás"],
+    ["lc", 23, 33, 43, "Hoje estarás comigo no paraíso"],
+    ["lc", 23, 50, 56, "O sepultamento de Jesus"],
+    ["lc", 24, 1, 12, "A ressurreição"],
+    ["lc", 24, 13, 35, "Os discípulos de Emaús"],
+    ["lc", 24, 36, 49, "Jesus aparece aos discípulos"],
+    ["jo", 1, 1, 18, "No princípio era o Verbo"],
+    ["jo", 1, 6, 13, "O testemunho de João"],
+    ["jo", 1, 19, 28, "A missão de João Batista"],
+    ["jo", 1, 29, 34, "Jesus, o Cordeiro de Deus"],
+    ["jo", 1, 35, 42, "Os primeiros discípulos"],
+    ["jo", 1, 43, 51, "Jesus chama Filipe e Natanael"],
+    ["jo", 2, 1, 11, "As bodas de Caná"],
+    ["jo", 2, 12, 25, "Jesus purifica o templo"],
+    ["jo", 3, 1, 21, "Nicodemos"],
+    ["jo", 3, 22, 36, "O testemunho de João sobre Jesus"],
+    ["jo", 4, 1, 42, "A samaritana"],
+    ["jo", 4, 27, 38, "Os discípulos voltam e se admiram"],
+    ["jo", 5, 1, 15, "O tanque de Betesda"],
+    ["jo", 5, 16, 30, "O Pai e o Filho"],
+    ["jo", 5, 31, 38, "Os testemunhos sobre Jesus"],
+    ["jo", 5, 39, 47, "O testemunho das Escrituras"],
+    ["jo", 6, 1, 15, "A multiplicação para cinco mil"],
+    ["jo", 6, 16, 21, "Jesus caminha sobre as águas"],
+    ["jo", 6, 35, 51, "O pão da vida"],
+    ["jo", 6, 59, 66, "Muitos discípulos voltam atrás"],
+    ["jo", 7, 25, 36, "Jesus é o Cristo?"],
+    ["jo", 8, 1, 11, "A mulher adúltera"],
+    ["jo", 8, 12, 29, "Jesus, a luz do mundo"],
+    ["jo", 8, 30, 47, "A verdade vos libertará"],
+    ["jo", 8, 48, 59, "Antes que Abraão existisse, eu sou"],
+    ["jo", 9, 1, 41, "O cego de nascença"],
+    ["jo", 9, 35, 41, "A cegueira espiritual"],
+    ["jo", 10, 1, 18, "O bom pastor"],
+    ["jo", 11, 17, 44, "A ressurreição de Lázaro"],
+    ["jo", 11, 38, 44, "Jesus ressuscita Lázaro"],
+    ["jo", 11, 45, 57, "A trama para matar Jesus"],
+    ["jo", 12, 1, 8, "Maria unge Jesus"],
+    ["jo", 12, 12, 19, "A entrada triunfal"],
+    ["jo", 12, 20, 36, "Jesus anuncia a sua morte"],
+    ["jo", 12, 37, 50, "Fé e incredulidade"],
+    ["jo", 13, 1, 17, "O lava-pés"],
+    ["jo", 13, 18, 30, "Jesus anuncia a traição"],
+    ["jo", 14, 1, 14, "Eu sou o caminho"],
+    ["jo", 14, 5, 14, "O caminho, a verdade e a vida"],
+    ["jo", 14, 15, 27, "A paz vos deixo"],
+    ["jo", 15, 1, 8, "A videira e os ramos"],
+    ["jo", 15, 9, 17, "Permanecei no meu amor"],
+    ["jo", 15, 18, 27, "O ódio do mundo"],
+    ["jo", 16, 5, 16, "A promessa do Espírito Santo"],
+    ["jo", 16, 17, 22, "A tristeza se converterá em alegria"],
+    ["jo", 16, 23, 33, "Pedi em meu nome"],
+    ["jo", 17, 6, 19, "A oração pelos discípulos"],
+    ["jo", 17, 20, 26, "Que todos sejam um"],
+    ["jo", 18, 1, 14, "A traição de Jesus"],
+    ["jo", 18, 28, 40, "Jesus diante de Pilatos"],
+    ["jo", 19, 1, 15, "Os soldados zombam de Jesus"],
+    ["jo", 19, 25, 30, "Eis a tua mãe"],
+    ["jo", 19, 31, 37, "O lado de Jesus é traspassado"],
+    ["jo", 20, 1, 9, "A ressurreição"],
+    ["jo", 20, 10, 18, "Jesus aparece a Maria Madalena"],
+    ["jo", 20, 19, 29, "Tomé"],
+    ["jo", 20, 24, 29, "Jesus aparece a Tomé"],
+    ["jo", 21, 1, 14, "Jesus aparece junto ao mar de Tiberíades"],
+    ["jo", 21, 15, 19, "Pedro, tu me amas?"],
+    ["jo", 21, 20, 25, "Jesus e o discípulo amado"],
+    ["atos", 1, 6, 11, "A ascensão"],
+    ["atos", 1, 12, 26, "Matias substitui Judas"],
+    ["atos", 2, 1, 13, "Pentecostes"],
+    ["atos", 2, 14, 36, "Pedro fala à multidão"],
+    ["atos", 2, 42, 47, "A vida da primeira comunidade"],
+    ["atos", 3, 1, 10, "O coxo anda"],
+    ["atos", 3, 11, 26, "Pedro fala no pórtico de Salomão"],
+    ["atos", 4, 1, 12, "Pedro e João diante do Sinédrio"],
+    ["atos", 4, 13, 22, "O nome proibido"],
+    ["atos", 4, 23, 31, "A oração dos fiéis"],
+    ["atos", 4, 32, 37, "A partilha entre os fiéis"],
+    ["atos", 5, 1, 11, "Ananias e Safira"],
+    ["atos", 5, 17, 23, "Os apóstolos são presos e libertados"],
+    ["atos", 5, 24, 32, "Os apóstolos diante do Sinédrio"],
+    ["atos", 5, 33, 42, "O conselho de Gamaliel"],
+    ["atos", 6, 1, 7, "A escolha dos sete"],
+    ["atos", 6, 8, 15, "A prisão de Estêvão"],
+    ["atos", 7, 1, 8, "O discurso de Estêvão: o chamado de Abraão"],
+    ["atos", 7, 9, 14, "José é vendido para o Egito"],
+    ["atos", 7, 23, 29, "Moisés é rejeitado e foge"],
+    ["atos", 7, 30, 38, "O chamado de Moisés"],
+    ["atos", 7, 54, 60, "O apedrejamento de Estêvão"],
+    ["atos", 8, 9, 25, "Simão, o mago"],
+    ["atos", 8, 26, 40, "Filipe e o etíope"],
+    ["atos", 9, 1, 19, "A conversão de Paulo"],
+    ["atos", 9, 10, 19, "Ananias batiza Saulo"],
+    ["atos", 9, 36, 43, "A ressurreição de Tabita"],
+    ["atos", 10, 1, 8, "Cornélio manda chamar Pedro"],
+    ["atos", 10, 9, 16, "A visão de Pedro"],
+    ["atos", 10, 17, 23, "Pedro é chamado a Cesareia"],
+    ["atos", 10, 24, 33, "Pedro visita Cornélio"],
+    ["atos", 10, 34, 43, "Boa-nova para os gentios"],
+    ["atos", 11, 1, 18, "O relato de Pedro em Jerusalém"],
+    ["atos", 11, 19, 30, "A igreja em Antioquia"],
+    ["atos", 12, 5, 19, "A libertação de Pedro"],
+    ["atos", 13, 4, 12, "Em Chipre"],
+    ["atos", 13, 13, 41, "Em Antioquia da Pisídia"],
+    ["atos", 13, 42, 52, "Luz para os gentios"],
+    ["atos", 14, 1, 7, "Paulo e Barnabé em Icônio"],
+    ["atos", 14, 8, 20, "A visita a Listra e Derbe"],
+    ["atos", 14, 21, 28, "Os discípulos são fortalecidos"],
+    ["atos", 15, 5, 21, "O concílio de Jerusalém"],
+    ["atos", 15, 22, 29, "A carta aos fiéis gentios"],
+    ["atos", 15, 30, 35, "Os fiéis de Antioquia se alegram"],
+    ["atos", 16, 16, 24, "Paulo e Silas na prisão"],
+    ["atos", 16, 25, 34, "A conversão do carcereiro"],
+    ["atos", 17, 1, 9, "O tumulto em Tessalônica"],
+    ["atos", 17, 10, 15, "A nobreza dos bereanos"],
+    ["atos", 17, 16, 21, "Paulo em Atenas"],
+    ["atos", 17, 22, 34, "O discurso de Paulo no Areópago"],
+    ["atos", 18, 1, 11, "Paulo em Corinto"],
+    ["atos", 18, 12, 17, "Paulo diante de Gálio"],
+    ["atos", 19, 1, 7, "O Espírito Santo em Éfeso"],
+    ["atos", 19, 21, 41, "O tumulto em Éfeso"],
+    ["atos", 20, 1, 6, "Paulo na Macedônia e na Grécia"],
+    ["atos", 20, 7, 12, "Êutico volta à vida em Trôade"],
+    ["atos", 20, 17, 38, "A despedida de Paulo aos efésios"],
+    ["atos", 21, 17, 26, "Paulo chega a Jerusalém"],
+    ["atos", 21, 27, 36, "Paulo é preso no templo"],
+    ["atos", 22, 1, 21, "A defesa de Paulo diante da multidão"],
+    ["atos", 22, 22, 30, "Paulo, cidadão romano"],
+    ["atos", 23, 1, 11, "Paulo diante do Sinédrio"],
+    ["atos", 23, 12, 22, "A trama para matar Paulo"],
+    ["atos", 23, 23, 35, "Paulo é enviado a Félix"],
+    ["atos", 24, 1, 9, "Tértulo acusa Paulo"],
+    ["atos", 24, 10, 21, "A defesa de Paulo diante de Félix"],
+    ["atos", 24, 22, 27, "O julgamento é adiado"],
+    ["atos", 25, 1, 9, "Paulo é julgado diante de Festo"],
+    ["atos", 25, 13, 22, "Festo consulta Agripa"],
+    ["atos", 26, 1, 23, "O testemunho de Paulo diante de Agripa"],
+    ["atos", 26, 24, 32, "Festo interrompe a defesa de Paulo"],
+    ["atos", 27, 1, 12, "Paulo parte para Roma"],
+    ["atos", 27, 13, 26, "A tempestade no mar"],
+    ["atos", 27, 27, 44, "O naufrágio"],
+    ["atos", 28, 1, 10, "Em terra, na ilha de Malta"],
+    ["atos", 28, 16, 31, "Paulo prega em Roma"],
+    ["rm", 1, 1, 7, "Paulo saúda os santos de Roma"],
+    ["rm", 1, 8, 17, "Não me envergonho do Evangelho"],
+    ["rm", 1, 18, 32, "A ira de Deus contra o pecado"],
+    ["rm", 2, 1, 16, "O justo juízo de Deus"],
+    ["rm", 2, 17, 29, "Os judeus e a Lei"],
+    ["rm", 3, 1, 8, "Deus permanece fiel"],
+    ["rm", 3, 9, 20, "Não há um justo sequer"],
+    ["rm", 3, 21, 31, "A justiça pela fé em Cristo"],
+    ["rm", 4, 1, 12, "Abraão justificado pela fé"],
+    ["rm", 4, 13, 25, "Abraão recebe a promessa"],
+    ["rm", 5, 1, 11, "A esperança não decepciona"],
+    ["rm", 5, 6, 11, "Cristo morreu pelos ímpios"],
+    ["rm", 5, 12, 21, "Morte em Adão, vida em Cristo"],
+    ["rm", 6, 1, 14, "Mortos para o pecado, vivos para Deus"],
+    ["rm", 6, 15, 23, "O salário do pecado"],
+    ["rm", 7, 1, 6, "Livres da Lei"],
+    ["rm", 7, 13, 25, "A luta contra o pecado"],
+    ["rm", 8, 1, 11, "Andar segundo o Espírito"],
+    ["rm", 8, 12, 17, "Herdeiros com Cristo"],
+    ["rm", 8, 18, 30, "Tudo concorre para o bem"],
+    ["rm", 8, 31, 39, "Nada nos separará do amor de Deus"],
+    ["rm", 9, 6, 29, "A escolha soberana de Deus"],
+    ["rm", 10, 1, 21, "A palavra que traz salvação"],
+    ["rm", 11, 1, 10, "Um remanescente escolhido pela graça"],
+    ["rm", 11, 11, 24, "Os gentios enxertados"],
+    ["rm", 11, 25, 32, "Todo o Israel será salvo"],
+    ["rm", 12, 1, 21, "O culto espiritual"],
+    ["rm", 12, 14, 21, "O perdão"],
+    ["rm", 13, 1, 7, "A submissão às autoridades"],
+    ["rm", 15, 1, 6, "Acolhei-vos uns aos outros"],
+    ["rm", 15, 7, 13, "Cristo, servo de judeus e gentios"],
+    ["rm", 15, 14, 22, "Paulo, ministro aos gentios"],
+    ["rm", 15, 23, 33, "Os planos de viagem de Paulo"],
+    ["rm", 16, 1, 16, "Saudações pessoais"],
+    ["1co", 1, 4, 9, "Ação de graças"],
+    ["1co", 1, 10, 17, "A unidade na igreja"],
+    ["1co", 1, 18, 25, "A mensagem da cruz"],
+    ["1co", 1, 26, 31, "A sabedoria que vem de Deus"],
+    ["1co", 2, 6, 16, "A sabedoria espiritual"],
+    ["1co", 3, 1, 9, "Cooperadores de Deus"],
+    ["1co", 3, 10, 15, "Cristo, o nosso fundamento"],
+    ["1co", 3, 16, 23, "O templo de Deus e a sabedoria de Deus"],
+    ["1co", 4, 1, 13, "Servos de Cristo"],
+    ["1co", 4, 14, 21, "A advertência paterna de Paulo"],
+    ["1co", 5, 1, 8, "A imoralidade é repreendida"],
+    ["1co", 6, 1, 8, "Processos entre irmãos"],
+    ["1co", 6, 9, 17, "Membros de Cristo"],
+    ["1co", 7, 1, 16, "Princípios do casamento"],
+    ["1co", 7, 17, 24, "Vive a tua vocação"],
+    ["1co", 7, 25, 40, "Os solteiros e as viúvas"],
+    ["1co", 8, 1, 13, "A carne sacrificada aos ídolos"],
+    ["1co", 9, 1, 18, "Os direitos de um apóstolo"],
+    ["1co", 10, 1, 13, "Advertências do passado de Israel"],
+    ["1co", 10, 14, 22, "Fugi da idolatria"],
+    ["1co", 10, 23, 33, "Tudo para a glória de Deus"],
+    ["1co", 11, 1, 16, "Os papéis no culto"],
+    ["1co", 11, 17, 34, "A Ceia do Senhor"],
+    ["1co", 12, 1, 11, "Os dons espirituais"],
+    ["1co", 12, 12, 27, "Um só corpo, muitos membros"],
+    ["1co", 13, 1, 13, "O hino ao amor"],
+    ["1co", 14, 1, 25, "Profecia e línguas"],
+    ["1co", 14, 26, 40, "O culto ordenado"],
+    ["1co", 15, 1, 11, "O anúncio da ressurreição"],
+    ["1co", 15, 12, 19, "A ressurreição dos mortos"],
+    ["1co", 15, 35, 49, "O corpo ressuscitado"],
+    ["1co", 15, 50, 58, "Onde está, ó morte, a tua vitória?"],
+    ["1co", 16, 13, 18, "Exortações finais"],
+    ["1co", 16, 19, 24, "Assinatura e saudações finais"],
+    ["2co", 1, 3, 11, "O Deus de toda consolação"],
+    ["2co", 1, 12, 24, "Paulo muda os planos"],
+    ["2co", 2, 1, 11, "Confirmai o vosso amor"],
+    ["2co", 2, 12, 17, "O triunfo em Cristo"],
+    ["2co", 3, 1, 6, "Ministros de uma nova aliança"],
+    ["2co", 3, 7, 18, "A glória da nova aliança"],
+    ["2co", 4, 1, 6, "A luz do Evangelho"],
+    ["2co", 4, 7, 18, "Tesouro em vasos de barro"],
+    ["2co", 5, 1, 10, "A nossa morada eterna"],
+    ["2co", 5, 11, 21, "Embaixadores de Cristo"],
+    ["2co", 6, 1, 13, "As dificuldades de Paulo e a graça de Deus"],
+    ["2co", 7, 1, 16, "A alegria de Paulo com os coríntios"],
+    ["2co", 8, 1, 15, "A generosidade elogiada"],
+    ["2co", 8, 16, 24, "Tito é recomendado"],
+    ["2co", 9, 1, 15, "Deus ama quem dá com alegria"],
+    ["2co", 10, 1, 18, "A autoridade apostólica de Paulo"],
+    ["2co", 11, 1, 15, "Paulo e os falsos apóstolos"],
+    ["2co", 11, 16, 33, "Os sofrimentos e o serviço de Paulo"],
+    ["2co", 12, 7, 10, "Minha graça te basta"],
+    ["2co", 12, 11, 21, "A preocupação de Paulo com os coríntios"],
+    ["2co", 13, 1, 10, "Examinai-vos a vós mesmos"],
+    ["gl", 1, 10, 24, "Paulo prega o Evangelho"],
+    ["gl", 2, 1, 10, "O concílio de Jerusalém"],
+    ["gl", 2, 11, 21, "Paulo confronta Cefas"],
+    ["gl", 3, 1, 9, "Fé e crença"],
+    ["gl", 3, 15, 25, "O propósito da Lei"],
+    ["gl", 4, 8, 20, "A preocupação de Paulo com os gálatas"],
+    ["gl", 4, 21, 31, "Agar e Sara"],
+    ["gl", 5, 13, 26, "O fruto do Espírito"],
+    ["gl", 5, 16, 26, "Andar segundo o Espírito"],
+    ["gl", 6, 1, 10, "Levai as cargas uns dos outros"],
+    ["gl", 6, 11, 18, "Advertências e bênçãos finais"],
+    ["ef", 1, 3, 14, "As bênçãos espirituais"],
+    ["ef", 1, 15, 23, "A sabedoria espiritual"],
+    ["ef", 2, 1, 10, "Salvos pela graça"],
+    ["ef", 2, 11, 18, "Um só em Cristo"],
+    ["ef", 3, 1, 13, "O mistério do Evangelho"],
+    ["ef", 3, 14, 21, "A oração de Paulo"],
+    ["ef", 4, 1, 16, "A unidade do corpo"],
+    ["ef", 4, 17, 32, "A nova vida em Cristo"],
+    ["ef", 5, 1, 7, "Imitadores de Deus"],
+    ["ef", 6, 10, 18, "A armadura de Deus"],
+    ["fp", 1, 3, 11, "Ação de graças e oração"],
+    ["fp", 1, 12, 20, "As prisões de Paulo fazem o Evangelho avançar"],
+    ["fp", 1, 21, 26, "Para mim, o viver é Cristo"],
+    ["fp", 2, 1, 11, "O hino de Cristo"],
+    ["fp", 2, 5, 11, "O sentimento de Cristo"],
+    ["fp", 2, 12, 18, "Luzes no mundo"],
+    ["fp", 2, 19, 30, "Timóteo e Epafrodito"],
+    ["fp", 3, 1, 11, "A justiça pela fé em Cristo"],
+    ["fp", 4, 4, 9, "Alegrai-vos sempre"],
+    ["fp", 4, 10, 13, "Tudo posso naquele que me fortalece"],
+    ["cl", 1, 3, 14, "Ação de graças e oração"],
+    ["cl", 1, 15, 23, "A supremacia do Filho"],
+    ["cl", 1, 24, 29, "Os sofrimentos de Paulo pela igreja"],
+    ["cl", 2, 6, 23, "Vivos com Cristo"],
+    ["cl", 3, 12, 17, "Revesti-vos de misericórdia"],
+    ["cl", 4, 1, 6, "Palavras e atitudes de oração"],
+    ["cl", 4, 7, 14, "Saudações dos cooperadores de Paulo"],
+    ["1ts", 1, 1, 10, "Saudação aos tessalonicenses"],
+    ["1ts", 2, 1, 16, "O ministério de Paulo"],
+    ["1ts", 3, 6, 13, "As boas notícias trazidas por Timóteo"],
+    ["1ts", 4, 1, 12, "Viver para agradar a Deus"],
+    ["1ts", 4, 13, 18, "A volta do Senhor"],
+    ["1ts", 5, 1, 11, "O dia do Senhor"],
+    ["1ts", 5, 12, 24, "Orai sem cessar"],
+    ["1ts", 5, 23, 28, "Bênçãos e instruções finais"],
+    ["2ts", 1, 5, 12, "A vinda de Cristo"],
+    ["2ts", 2, 1, 12, "O homem da iniquidade"],
+    ["2ts", 3, 6, 15, "Advertência contra a ociosidade"],
+    ["1tm", 1, 3, 11, "A correção dos falsos mestres"],
+    ["1tm", 1, 12, 20, "A graça de Deus para com Paulo"],
+    ["1tm", 2, 1, 8, "Um chamado à oração"],
+    ["1tm", 2, 9, 15, "Instruções às mulheres"],
+    ["1tm", 3, 1, 7, "Requisitos para os bispos"],
+    ["1tm", 3, 8, 13, "Requisitos para os diáconos"],
+    ["1tm", 4, 6, 16, "Um bom servo de Cristo Jesus"],
+    ["1tm", 5, 3, 16, "Honrar as verdadeiras viúvas"],
+    ["1tm", 6, 11, 16, "Combate o bom combate"],
+    ["2tm", 1, 3, 12, "Fidelidade na perseguição"],
+    ["2tm", 1, 13, 18, "Apega-te à sã doutrina"],
+    ["2tm", 2, 1, 13, "Graça e perseverança"],
+    ["2tm", 2, 14, 26, "O obreiro aprovado"],
+    ["2tm", 3, 1, 9, "O mal dos últimos dias"],
+    ["2tm", 3, 10, 17, "Toda a Escritura é inspirada por Deus"],
+    ["2tm", 4, 6, 8, "Combati o bom combate"],
+    ["2tm", 4, 9, 15, "Recomendações pessoais"],
+    ["tt", 1, 10, 16, "A correção dos falsos mestres"],
+    ["tt", 2, 1, 10, "O ensino da sã doutrina"],
+    ["tt", 3, 1, 8, "Herdeiros da graça"],
+    ["fm", 1, 8, 22, "O pedido de Paulo por Onésimo"],
+    ["hb", 1, 1, 14, "A supremacia do Filho"],
+    ["hb", 2, 5, 18, "Jesus, semelhante aos seus irmãos"],
+    ["hb", 3, 12, 19, "O perigo da incredulidade"],
+    ["hb", 4, 1, 11, "O repouso sabático"],
+    ["hb", 4, 14, 16, "O sumo sacerdote que se compadece"],
+    ["hb", 6, 1, 12, "Um chamado à maturidade"],
+    ["hb", 6, 13, 20, "A promessa imutável de Deus"],
+    ["hb", 7, 1, 10, "Melquisedeque e Abraão"],
+    ["hb", 8, 6, 13, "A nova aliança"],
+    ["hb", 9, 11, 28, "A redenção pelo seu sangue"],
+    ["hb", 10, 1, 18, "O sacrifício perfeito de Cristo"],
+    ["hb", 10, 19, 39, "Um chamado à perseverança"],
+    ["hb", 11, 1, 16, "A fé"],
+    ["hb", 11, 8, 19, "A fé de Abraão e Sara"],
+    ["hb", 11, 23, 29, "A fé de Moisés"],
+    ["hb", 11, 30, 40, "A fé dos heróis de Israel"],
+    ["hb", 12, 1, 13, "Corramos com perseverança"],
+    ["hb", 12, 18, 29, "Um reino inabalável"],
+    ["hb", 13, 5, 14, "Cristo não muda"],
+    ["hb", 13, 20, 25, "Bênção e despedida"],
+    ["tg", 1, 2, 12, "A provação gera perseverança"],
+    ["tg", 1, 13, 18, "Toda boa dádiva"],
+    ["tg", 1, 19, 27, "Ouvir e praticar"],
+    ["tg", 2, 1, 13, "Advertência contra o favoritismo"],
+    ["tg", 2, 14, 26, "A fé sem obras"],
+    ["tg", 3, 1, 12, "Domar a língua"],
+    ["tg", 3, 13, 18, "A sabedoria do alto"],
+    ["tg", 4, 1, 6, "Advertência contra o orgulho"],
+    ["tg", 4, 7, 12, "Chegai-vos a Deus"],
+    ["tg", 5, 1, 6, "Advertência aos ricos"],
+    ["tg", 5, 7, 12, "Paciência no sofrimento"],
+    ["tg", 5, 13, 18, "A oração da fé"],
+    ["1pe", 1, 3, 12, "Uma esperança viva"],
+    ["1pe", 1, 13, 21, "Um chamado à santidade"],
+    ["1pe", 2, 1, 12, "A pedra viva e o povo escolhido"],
+    ["1pe", 2, 13, 20, "A submissão às autoridades"],
+    ["1pe", 3, 8, 13, "Afasta-te do mal"],
+    ["1pe", 3, 14, 22, "Sofrer por causa da justiça"],
+    ["1pe", 4, 1, 11, "Viver para a glória de Deus"],
+    ["1pe", 4, 12, 19, "Sofrer como cristão"],
+    ["1pe", 5, 6, 11, "Lançai sobre ele as vossas preocupações"],
+    ["2pe", 1, 3, 15, "Participantes da natureza divina"],
+    ["2pe", 1, 16, 21, "Testemunhas da sua majestade"],
+    ["2pe", 2, 1, 22, "A libertação dos falsos profetas"],
+    ["2pe", 3, 1, 7, "O juízo que virá"],
+    ["2pe", 3, 8, 13, "O dia do Senhor"],
+    ["1jo", 1, 5, 10, "Deus é luz"],
+    ["1jo", 2, 1, 6, "Jesus, o nosso advogado"],
+    ["1jo", 2, 7, 14, "Um novo mandamento"],
+    ["1jo", 2, 18, 23, "Cuidado com os anticristos"],
+    ["1jo", 2, 24, 29, "Permanecei em Cristo"],
+    ["1jo", 3, 11, 24, "Amai-vos uns aos outros"],
+    ["1jo", 4, 1, 6, "Provai os espíritos"],
+    ["1jo", 4, 7, 21, "Deus é amor"],
+    ["1jo", 5, 1, 8, "A vitória sobre o mundo"],
+    ["jd", 1, 3, 16, "O juízo de Deus sobre os ímpios"],
+    ["jd", 1, 17, 23, "Um chamado à perseverança"],
+    ["ap", 1, 9, 20, "A visão de João em Patmos"],
+    ["ap", 2, 1, 7, "À igreja em Éfeso"],
+    ["ap", 2, 12, 17, "À igreja em Pérgamo"],
+    ["ap", 2, 18, 29, "À igreja em Tiatira"],
+    ["ap", 3, 1, 6, "À igreja em Sardes"],
+    ["ap", 3, 7, 13, "À igreja em Filadélfia"],
+    ["ap", 3, 14, 22, "Eis que estou à porta e bato"],
+    ["ap", 4, 5, 11, "A adoração ao Criador"],
+    ["ap", 5, 1, 10, "O Cordeiro recebe o livro"],
+    ["ap", 6, 12, 17, "O sexto selo: o terror"],
+    ["ap", 7, 1, 8, "Os 144 mil selados"],
+    ["ap", 7, 9, 17, "O louvor da grande multidão"],
+    ["ap", 8, 6, 13, "As quatro primeiras trombetas"],
+    ["ap", 9, 1, 12, "A quinta trombeta"],
+    ["ap", 9, 13, 21, "A sexta trombeta"],
+    ["ap", 10, 1, 11, "O anjo e o livrinho"],
+    ["ap", 11, 1, 6, "As duas testemunhas"],
+    ["ap", 11, 7, 14, "As testemunhas mortas e ressuscitadas"],
+    ["ap", 12, 1, 6, "A mulher e o dragão"],
+    ["ap", 12, 7, 12, "A guerra no céu"],
+    ["ap", 13, 1, 10, "A besta que sobe do mar"],
+    ["ap", 14, 6, 13, "Os três anjos e a queda da Babilônia"],
+    ["ap", 14, 14, 20, "A colheita da terra"],
+    ["ap", 16, 1, 16, "As seis primeiras taças da ira"],
+    ["ap", 17, 6, 13, "O mistério explicado"],
+    ["ap", 18, 1, 8, "Caiu Babilônia"],
+    ["ap", 18, 9, 20, "O lamento sobre a Babilônia"],
+    ["ap", 19, 11, 16, "O cavaleiro do cavalo branco"],
+    ["ap", 20, 1, 6, "Satanás é preso"],
+    ["ap", 21, 1, 7, "Novo céu e nova terra"],
+    ["ap", 21, 9, 27, "A nova Jerusalém"],
+    ["ap", 22, 6, 17, "Jesus vem"]
   ];
 
   const FILTERS = [
@@ -197,12 +2720,12 @@
 
   const store = {
     get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
-    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { } }
   };
 
   let filter = store.get('sorteio.filter', 'todos');
   if (!FILTERS.some(f => f.id === filter)) filter = 'todos';
-  let history = store.get('sorteio.hist2', []);
+  let history = store.get('sorteio.hist4', []);
   let current = null;
   const $ = id => document.getElementById(id);
   const keyOf = p => p[0] + p[1] + ':' + p[2];
@@ -219,15 +2742,19 @@
   function verses(p) { const v = []; for (let i = p[2]; i <= p[3]; i++) v.push(i); return v; }
   function urlFor(p) {
     const base = BASE + encodeURIComponent(p[0]) + '/' + p[1];
-    return p[2] ? base + '/' + verses(p).join(',') + '+' : base;
+    if (!p[2]) return base;
+    return p[5] ? base + '/' + p[2] + '+' : base + '/' + verses(p).join(',') + '+';
   }
   function refFor(p) {
     const ab = BOOKS[p[0]][1];
-    return p[2] ? ab + ' ' + p[1] + ',' + p[2] + (p[3] > p[2] ? '-' + p[3] : '') : ab + ' ' + p[1];
+    if (!p[2]) return ab + ' ' + p[1];
+    if (p[5]) return ab + ' ' + p[1] + ',' + p[2] + '–' + p[5] + ',' + p[3];
+    return ab + ' ' + p[1] + ',' + p[2] + (p[3] > p[2] ? '-' + p[3] : '');
   }
   function metaFor(p) {
     const name = BOOKS[p[0]][0];
-    if (!p[2]) return 'Salmo ' + p[1] + ', pela numeração da Ave-Maria';
+    if (!p[2]) return 'Salmo ' + p[1];
+    if (p[5]) return name + ', do capítulo ' + p[1] + ', versículo ' + p[2] + ', ao capítulo ' + p[5] + ', versículo ' + p[3];
     return name + ', capítulo ' + p[1] + ', versículos ' + p[2] + ' a ' + p[3];
   }
 
@@ -244,7 +2771,7 @@
     current = pick;
     render();
     history = [keyOf(pick), ...history.filter(k => k !== keyOf(pick))].slice(0, 6);
-    store.set('sorteio.hist2', history);
+    store.set('sorteio.hist4', history);
     renderHistory();
   }
 
@@ -295,7 +2822,7 @@
 
   async function copy() {
     const p = current;
-    const text = p[4] + ' — ' + refFor(p) + ' (Bíblia Ave-Maria)\n' + urlFor(p);
+    const text = p[4] + ' — ' + refFor(p) + ' (ARC)\n' + urlFor(p);
     try {
       await navigator.clipboard.writeText(text);
       $('toast').textContent = 'Passagem e link copiados.';
@@ -307,18 +2834,18 @@
     }
   }
 
-  $('foot').textContent = PASSAGES.length + ' passagens selecionadas, dos dois Testamentos. O link abre o capítulo no Bíblia Online, versão AVM. Os Salmos seguem a numeração da Ave-Maria: o "Senhor é meu pastor" é o 22.';
+  $('foot').textContent = PASSAGES.length + ' passagens dos dois Testamentos, com títulos baseados nas divisões da Berean Standard Bible (domínio público). O link abre o capítulo no Bíblia Online, na Almeida Revista e Corrigida.';
   function applyTheme(t) {
     const root = document.documentElement;
     if (t === 'light' || t === 'dark') root.setAttribute('data-theme', t); else root.removeAttribute('data-theme');
     document.querySelectorAll('.tbtn').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.t === t)));
   }
   let theme = 'system';
-  try { const t = localStorage.getItem('sorteio.theme'); if (t === 'light' || t === 'dark') theme = t; } catch {}
+  try { const t = localStorage.getItem('sorteio.theme'); if (t === 'light' || t === 'dark') theme = t; } catch { }
   applyTheme(theme);
   document.querySelectorAll('.tbtn').forEach(b => b.addEventListener('click', () => {
     theme = b.dataset.t; applyTheme(theme);
-    try { theme === 'system' ? localStorage.removeItem('sorteio.theme') : localStorage.setItem('sorteio.theme', theme); } catch {}
+    try { theme === 'system' ? localStorage.removeItem('sorteio.theme') : localStorage.setItem('sorteio.theme', theme); } catch { }
   }));
 
   $('draw').addEventListener('click', draw);
